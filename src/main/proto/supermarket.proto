@@ -1,0 +1,152 @@
+// use proto 3 syntax
+syntax = "proto3";
+
+/// Specify which Java package the generated classes should belong to.
+option java_package = "com.example.supermarket.grpc";
+// allow protobuf to generate multiple files for the message classes
+option java_multiple_files = true;
+
+// Define all services & procedures that the client can call upon
+service ProductGrpcService {
+    rpc GetProducts (Empty) returns (ProductList);
+    rpc GetProduct (ProductRequest) returns (ProductResponse);
+    rpc CreateProduct (CreateProductRequest) returns (Empty);
+    rpc UpdateProduct (UpdateProductRequest) returns (Empty);
+    // DeleteProductById can use ProductRequest message format that can return only the id
+    rpc DeleteProduct (ProductRequest) returns (Empty);
+}
+
+service InventoryGrpcService {
+    rpc GetInventoryItems (Empty) returns (InventoryItemList);
+    rpc GetInventoryItem (InventoryItemRequest) returns (InventoryItemResponse);
+    rpc CreateInventoryItem (CreateInventoryItemRequest) returns (Empty);
+    rpc UpdateInventoryItem (UpdateInventoryItemRequest) returns (Empty);
+    rpc DeleteInventoryItem (InventoryItemRequest) returns (Empty);
+}
+
+service CartGrpcService {
+    rpc CreateCart (Empty) returns (CartResponse);
+    rpc GetCart (CartRequest) returns (CartResponse);
+    rpc GetCarts (Empty) returns (CartList);
+    rpc DeleteCart (CartRequest) returns (Empty);
+
+    rpc GetItems (CartRequest) returns (CartItemList);
+    rpc CreateItem (CreateCartItemRequest) returns (Empty);
+    rpc UpdateItem (UpdateCartItemRequest) returns (Empty);
+    rpc DeleteItem (CartItemRequest) returns (Empty);
+}
+
+// basically the "model" folder, defining the message fields & data required for a request
+
+// ProductGrpcService
+
+message Empty {
+}
+
+message ProductRequest {
+    int64 id = 1;
+}
+
+message ProductResponse {
+    int64 id = 1;
+    string name = 2;
+    string description = 3;
+    string category = 4;
+    double price = 5;
+}
+
+message ProductList {
+    repeated ProductResponse products = 1;
+}
+
+message CreateProductRequest {
+    string name = 1;
+    string description = 2;
+    string category = 3;
+    double price = 4;
+}
+
+message UpdateProductRequest {
+    int64 id = 1;
+    optional string name = 2;
+    optional string description = 3;
+    optional string category = 4;
+    optional double price = 5;
+}
+
+//ProductGrpcServiceEnd
+
+//InventoryGrpcService
+
+message InventoryItemRequest {
+    int64 id = 1; 
+}
+
+message InventoryItemResponse {
+    int64 id = 1;
+    ProductResponse product = 2;
+    int32 quantity = 3;
+}
+
+message InventoryItemList {
+    repeated InventoryItemResponse inventoryItems = 1;
+}
+
+message CreateInventoryItemRequest {
+    int64 productId = 1;
+    int32 quantity = 2;
+}
+
+message UpdateInventoryItemRequest {
+    int64 id = 1;
+    bool hasQuantity = 2;
+    optional int32 quantity = 3;
+}
+
+//InventoryGrpcServiceEnd
+
+//CartGrpcService
+//For carts
+message CartRequest {
+    int64 id = 1;
+}
+
+message CartResponse {
+    int64 id = 1;
+    string createdAt = 2;
+}
+
+message CartList {
+    repeated CartResponse carts = 1;
+}
+
+//For cart items
+message CartItemRequest {
+    int64 cartId = 1;
+    int64 itemId = 2;
+}
+
+message CartItemResponse {
+    int64 id = 1;
+    ProductResponse product = 2;
+    int32 quantity = 3;
+}
+
+message CartItemList {
+    repeated CartItemResponse items = 1;
+}
+
+message CreateCartItemRequest {
+    int64 cartId = 1;
+    int64 productId = 2;
+    int32 quantity = 3;
+}
+
+message UpdateCartItemRequest {
+    int64 cartId = 1;
+    int64 itemId = 2;
+    bool hasQuantity = 3;
+    optional int32 quantity = 4;
+}
+
+// CartGrpcServiceEnd
