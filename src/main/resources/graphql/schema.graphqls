@@ -1,0 +1,36 @@
+type Product {
+    id: ID!
+    name: String!
+    description: String!
+    category: String!
+    price: Float!
+}
+
+type InventoryItem {
+    id: ID!
+    product: Product!
+    quantity: Int!
+}
+
+type Cart {
+    id: ID!
+    createdAt: String!
+    items: [CartItem!]!
+}
+
+type CartItem {
+    id: ID!
+    product: Product!
+    quantity: Int!
+}
+
+type Query {
+    products: [Product!]!
+    product(id: ID!): Product
+
+    inventoryItems: [InventoryItem!]!
+    inventoryItem(id: ID!): InventoryItem
+
+    carts: [Cart!]!
+    cart(id: ID!): Cart
+}
