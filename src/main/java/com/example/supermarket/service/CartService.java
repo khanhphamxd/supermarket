@@ -1,8 +1,10 @@
 package com.example.supermarket.service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.example.supermarket.model.Cart;
 import com.example.supermarket.model.CartItem;
@@ -37,8 +39,10 @@ public class CartService {
         cartRepository.delete(cart);
     }
 
+    @Transactional(readOnly = true)
     public List<CartItem> getAllCartItems(Long id) {
-        return getCartById(id).getItems();
+        Cart cart = getCartById(id);
+        return new ArrayList<>(cart.getItems());
     }
 
     public CartItem getCartItemInCart(Long cartId, Long itemId) {
