@@ -17,17 +17,17 @@ public class ProductController {
     }
 
     @GetMapping 
-    public List<Product> returnAllProducts() {
+    public List<Product> getAllProducts() {
         return productService.getAllProducts();
     }
 
     @GetMapping("/{id}") // Handle GET requests for a specific product ID
-    public Product returnProductById(@PathVariable Long id) {
+    public Product getProductById(@PathVariable Long id) {
         return productService.getProductById(id);
     }
 
     @PostMapping // Handle POST requests for a specific product ID
-    public String addProduct(@RequestBody Product product) {
+    public String createProduct(@RequestBody Product product) {
         productService.createProduct(
             product.getName(), 
             product.getDescription(), 
@@ -38,7 +38,7 @@ public class ProductController {
     }
 
     @PutMapping("/{id}")
-    public String editProduct(@PathVariable Long id, @RequestBody Product product) {
+    public String updateProduct(@PathVariable Long id, @RequestBody Product product) {
         productService.updateProduct(
             id,
             product.getName(), 
@@ -50,7 +50,7 @@ public class ProductController {
     }
     
     @DeleteMapping("/{id}")
-    public String removeProduct(@PathVariable Long id) {
+    public String deleteProduct(@PathVariable Long id) {
         productService.deleteProductById(id);
         return "Product with ID " + id + " deleted!";
     }
