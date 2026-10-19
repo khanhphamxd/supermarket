@@ -34,3 +34,45 @@ type Query {
     carts: [Cart!]!
     cart(id: ID!): Cart
 }
+
+
+type Mutation {
+    createProduct(
+        name: String!
+        description: String!
+        category: String!
+        price: Float!
+    ): Product!
+
+    updateProduct(
+        id: ID!
+        name: String
+        description: String
+        category: String
+        price: Float
+    ): Product!
+
+    deleteProduct(id: ID!): Boolean!
+
+    createInventoryItem(productId: ID!, quantity: Int!): InventoryItem!
+    updateInventoryItem(id: ID!, quantity: Int): InventoryItem!
+    deleteInventoryItem(id: ID!): Boolean!
+
+    createCart: Cart!
+    deleteCart(id: ID!): Boolean!
+
+    createCartItem(
+        cartId: ID!
+        productId: ID!
+        quantity: Int!
+    ): CartItem!
+
+    updateCartItem(
+        cartId: ID!
+        itemId: ID!
+        quantity: Int
+    ): CartItem!
+
+    deleteCartItem(cartId: ID!, itemId: ID!): Boolean!
+}
+

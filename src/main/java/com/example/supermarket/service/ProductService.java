@@ -37,25 +37,25 @@ public class ProductService {
         return productRepository.findAll();
     }
 
-    public void createProduct(String name, String description, String category, BigDecimal price) {
+    public Product createProduct(String name, String description, String category, BigDecimal price) {
         Product product = new Product(name, description, category, price);
-        saveProduct(product);
+        return saveProduct(product);
     }
 
-    public void saveProduct(Product product) {
-        productRepository.save(product);
+    public Product saveProduct(Product product) {
+        return productRepository.save(product);
     }
 
     public void deleteProductById(Long id) {
         productRepository.delete(getProductById(id));
     }
 
-    public void updateProduct(Long id, String name, String description, String category, BigDecimal price) {
+    public Product updateProduct(Long id, String name, String description, String category, BigDecimal price) {
         Product product = getProductById(id);
-        if (!name.isBlank()) {product.setName(name);}
-        if (!description.isBlank()) {product.setDescription(description);}
-        if (!category.isBlank()) {product.setCategory(category);}
+        if (name != null && !name.isBlank()) {product.setName(name);}
+        if (description != null && !description.isBlank()) {product.setDescription(description);}
+        if (category != null && !category.isBlank()) {product.setCategory(category);}
         if (price != null) {product.setPrice(price);}
-        saveProduct(product);
+        return saveProduct(product);
     }
 }

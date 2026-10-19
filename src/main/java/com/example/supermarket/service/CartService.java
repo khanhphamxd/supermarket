@@ -49,18 +49,22 @@ public class CartService {
         return getCartById(cartId).findItem(itemId);
     }
 
-    public void createItemInCart(Long id, Product product, int amount) {
+    @Transactional // Save the cart and its new item as one transaction
+    public CartItem createItemInCart(Long id, Product product, int amount) {
         CartItem item = new CartItem(product, amount);
         Cart cart = getCartById(id);
-        cart.addItem(item);
+        CartItem savedItem = cartItemRepository.save(item);
+        cart.addItem(savedItem);
         cartRepository.save(cart);
+        return item;
     }
 
-    public void updateCartItem(Long id, Long itemId, Integer newQuantity) {
+    @Transactional // Keep lazy-loaded cart items accessible while finding the item to update
+    public CartItem updateCartItem(Long id, Long itemId, Integer newQuantity) {
         Cart cart = getCartById(id);
         CartItem item = cart.findItem(itemId);
         if (newQuantity != null) {item.setQuantity(newQuantity);}
-        cartItemRepository.save(item);
+        return cartItemRepository.save(item);   
     }
 
     public void deleteCartItem(Long id, Long itemId) {

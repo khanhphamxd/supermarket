@@ -9,14 +9,14 @@ import jakarta.persistence.ManyToOne;
 @Entity 
 public class CartItem {
     
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        private Long id;
 
-    @ManyToOne 
-    private Product product; //The product instance
+        @ManyToOne 
+        private Product product; //The product instance
 
-    private Integer quantity; //The amount of product the customer has selected
+        private Integer quantity; //The amount of product the customer has selected
     
     protected CartItem() {
 

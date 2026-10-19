@@ -27,15 +27,15 @@ public class InventoryService {
         return inventoryRepository.findAll();
     }
 
-    public void createInventoryItem(Product product, int quantity) {
+    public InventoryItem createInventoryItem(Product product, int quantity) {
         InventoryItem item = new InventoryItem(product, quantity);
-        inventoryRepository.save(item);
+        return inventoryRepository.save(item);
     }
 
-    public void updateInventoryItem(Long id, Integer newQuantity) {
+    public InventoryItem updateInventoryItem(Long id, Integer newQuantity) {
         InventoryItem item = inventoryRepository.findById(id).orElseThrow();
         if (newQuantity != null) {item.setQuantity(newQuantity);}
-        inventoryRepository.save(item);
+        return inventoryRepository.save(item);
     }
 
     public void deleteInventoryItem(Long id) {
