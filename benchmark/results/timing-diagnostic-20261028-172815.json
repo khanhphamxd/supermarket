@@ -1,0 +1,234 @@
+{
+    "metrics": {
+        "http_req_blocked": {
+            "avg": 0.5384,
+            "min": 0,
+            "med": 0.5384,
+            "max": 1.0768,
+            "p(75)": 0.8076,
+            "p(90)": 0.96912,
+            "p(95)": 1.0229599999999999
+        },
+        "group_duration": {
+            "min": 7.102,
+            "med": 12.256,
+            "max": 12.5924,
+            "p(75)": 12.5083,
+            "p(90)": 12.5924,
+            "p(95)": 12.5924,
+            "avg": 10.650133333333333
+        },
+        "http_reqs": {
+            "count": 2,
+            "rate": 62.597025389353504
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 9.1406,
+            "min": 6.0252,
+            "med": 9.1406,
+            "max": 12.256,
+            "p(75)": 10.6983,
+            "p(90)": 11.63292,
+            "p(95)": 11.94446
+        },
+        "http_req_duration": {
+            "p(75)": 10.6983,
+            "p(90)": 11.63292,
+            "p(95)": 11.94446,
+            "avg": 9.1406,
+            "min": 6.0252,
+            "med": 9.1406,
+            "max": 12.256
+        },
+        "grpc_req_duration": {
+            "max": 9.6904,
+            "p(75)": 9.6904,
+            "p(90)": 9.6904,
+            "p(95)": 9.6904,
+            "avg": 9.6904,
+            "min": 9.6904,
+            "med": 9.6904
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 2,
+            "value": 0
+        },
+        "checks": {
+            "passes": 7,
+            "fails": 0,
+            "value": 1
+        },
+        "http_req_tls_handshaking": {
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(75)": 0,
+            "p(90)": 0
+        },
+        "http_req_waiting": {
+            "min": 6.0252,
+            "med": 9.1406,
+            "max": 12.256,
+            "p(75)": 10.6983,
+            "p(90)": 11.63292,
+            "p(95)": 11.94446,
+            "avg": 9.1406
+        },
+        "http_req_connecting": {
+            "avg": 0.2787,
+            "min": 0,
+            "med": 0.2787,
+            "max": 0.5574,
+            "p(75)": 0.41805000000000003,
+            "p(90)": 0.50166,
+            "p(95)": 0.52953
+        },
+        "data_sent": {
+            "count": 654,
+            "rate": 20469.227302318595
+        },
+        "data_received": {
+            "count": 670,
+            "rate": 20970.003505433422
+        },
+        "http_req_sending": {
+            "max": 0,
+            "p(75)": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0,
+            "med": 0
+        },
+        "iterations": {
+            "count": 1,
+            "rate": 31.298512694676752
+        },
+        "http_req_receiving": {
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(75)": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "iteration_duration": {
+            "med": 31.9504,
+            "max": 31.9504,
+            "p(75)": 31.9504,
+            "p(90)": 31.9504,
+            "p(95)": 31.9504,
+            "avg": 31.9504,
+            "min": 31.9504
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "REST - single product": {
+                "name": "REST - single product",
+                "path": "::REST - single product",
+                "id": "cefb29921974c878d5ebc35eb39c1d47",
+                "groups": {
+                    "product-rest-operation": {
+                        "name": "product-rest-operation",
+                        "path": "::REST - single product::product-rest-operation",
+                        "id": "ce401c569324613c3fc5a1726ea934bf",
+                        "groups": {},
+                        "checks": {
+                                "HTTP status is 200": {
+                                    "id": "74059f56efa07a9ce7fb13e50fdec1c5",
+                                    "passes": 1,
+                                    "fails": 0,
+                                    "name": "HTTP status is 200",
+                                    "path": "::REST - single product::product-rest-operation::HTTP status is 200"
+                                },
+                                "correct product returned": {
+                                    "name": "correct product returned",
+                                    "path": "::REST - single product::product-rest-operation::correct product returned",
+                                    "id": "56af6af589bc62d1047e91ad11f7ecd0",
+                                    "passes": 1,
+                                    "fails": 0
+                                }
+                            }
+                    }
+                },
+                "checks": {}
+            },
+            "GraphQL - single product": {
+                "name": "GraphQL - single product",
+                "path": "::GraphQL - single product",
+                "id": "413a7835ade2cc6c7ff4c59db5f83bb7",
+                "groups": {
+                    "product-graphql-operation": {
+                        "id": "fdd6f81031495ccd2c97018658dd1e46",
+                        "groups": {},
+                        "checks": {
+                                "HTTP status is 200": {
+                                    "name": "HTTP status is 200",
+                                    "path": "::GraphQL - single product::product-graphql-operation::HTTP status is 200",
+                                    "id": "fc8981b905ec3b552adf0183d456fe13",
+                                    "passes": 1,
+                                    "fails": 0
+                                },
+                                "GraphQL has no errors": {
+                                    "passes": 1,
+                                    "fails": 0,
+                                    "name": "GraphQL has no errors",
+                                    "path": "::GraphQL - single product::product-graphql-operation::GraphQL has no errors",
+                                    "id": "4ba1c878f491954529843fb4ed729517"
+                                },
+                                "correct product returned": {
+                                    "name": "correct product returned",
+                                    "path": "::GraphQL - single product::product-graphql-operation::correct product returned",
+                                    "id": "b8fe056aee930e41d261e59412be99b2",
+                                    "passes": 1,
+                                    "fails": 0
+                                }
+                            },
+                        "name": "product-graphql-operation",
+                        "path": "::GraphQL - single product::product-graphql-operation"
+                    }
+                },
+                "checks": {}
+            },
+            "gRPC - single product": {
+                "path": "::gRPC - single product",
+                "id": "bb75f3ede456b640544d3d9490a218b6",
+                "groups": {
+                    "product-grpc-operation": {
+                        "checks": {
+                            "gRPC: status is OK": {
+                                "name": "gRPC: status is OK",
+                                "path": "::gRPC - single product::product-grpc-operation::gRPC: status is OK",
+                                "id": "cdd7c08f17a756eb7240d0d139b380a1",
+                                "passes": 1,
+                                "fails": 0
+                            },
+                            "gRPC: correct product returned": {
+                                "name": "gRPC: correct product returned",
+                                "path": "::gRPC - single product::product-grpc-operation::gRPC: correct product returned",
+                                "id": "ee7df7ee77bd72266a7e9b5bf3d8276e",
+                                "passes": 1,
+                                "fails": 0
+                            }
+                        },
+                        "name": "product-grpc-operation",
+                        "path": "::gRPC - single product::product-grpc-operation",
+                        "id": "42efc16a7c9f14070ea470538143de47",
+                        "groups": {}
+                    }
+                },
+                "checks": {},
+                "name": "gRPC - single product"
+            }
+        },
+        "checks": {}
+    }
+}

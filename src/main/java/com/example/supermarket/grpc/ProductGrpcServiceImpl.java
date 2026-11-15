@@ -1,6 +1,7 @@
 package com.example.supermarket.grpc;
 
 import java.math.BigDecimal;
+import java.util.Comparator;
 import java.util.List;
 
 import org.springframework.grpc.server.service.GrpcService;
@@ -19,13 +20,21 @@ public class ProductGrpcServiceImpl extends ProductGrpcServiceGrpc.ProductGrpcSe
     }
 
     @Override
-    public void getProducts(Empty request, StreamObserver<ProductList> responseObserver) {
-        List<Product> products = productService.getAllProducts();
-        // generate a message builder
+    public void getProducts(
+        ProductListRequest request,
+        StreamObserver<ProductList> responseObserver) {
+
+        int limit = request.getLimit();
+
+        List<Product> products = productService.getAllProducts()
+            .stream()
+            .sorted(Comparator.comparing(Product::getId))
+            .limit(Math.max(0, limit))
+            .toList();
+
         ProductList.Builder result = ProductList.newBuilder();
 
-        for (Product product: products) {
-            // generate a ProductResponse format of each product for the builder
+        for (Product product : products) {
             ProductResponse grpcProduct = ProductResponse.newBuilder()
                 .setId(product.getId())
                 .setName(product.getName())
@@ -33,12 +42,11 @@ public class ProductGrpcServiceImpl extends ProductGrpcServiceGrpc.ProductGrpcSe
                 .setCategory(product.getCategory())
                 .setPrice(product.getPrice().doubleValue())
                 .build();
-            
-            result.addProducts(grpcProduct); //Add the products into the builder
+
+            result.addProducts(grpcProduct);
         }
-        // Observer: "U done with getting all the products? Now build!"
+
         responseObserver.onNext(result.build());
-        // Observer: "U done building? Let's return nothing & dip"
         responseObserver.onCompleted();
     }
 

@@ -1,0 +1,160 @@
+{
+    "metrics": {
+        "iterations": {
+            "rate": 1874.5163628669052,
+            "count": 112520
+        },
+        "vus_max": {
+            "value": 20,
+            "min": 20,
+            "max": 20
+        },
+        "http_req_connecting": {
+            "med": 0,
+            "max": 23.5199,
+            "p(75)": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.01201133753999289,
+            "min": 0
+        },
+        "http_req_waiting": {
+            "avg": 9.771558698009207,
+            "min": 0.9979,
+            "med": 8.9995,
+            "max": 143.4943,
+            "p(75)": 11.141825,
+            "p(90)": 14.416960000000003,
+            "p(95)": 17.228389999999887
+        },
+        "data_received": {
+            "count": 18812025,
+            "rate": 313397.1621148355
+        },
+        "checks": {
+            "fails": 0,
+            "passes": 225040,
+            "value": 1
+        },
+        "group_duration": {
+            "avg": 10.52951849537864,
+            "min": 1.5774,
+            "med": 9.51405,
+            "max": 145.1144,
+            "p(75)": 12.0037,
+            "p(90)": 15.34246000000001,
+            "p(95)": 18.5203
+        },
+        "iteration_duration": {
+            "med": 9.52445,
+            "max": 145.1144,
+            "p(75)": 12.0054,
+            "p(90)": 15.5191,
+            "p(95)": 18.66731999999997,
+            "avg": 10.624371751688692,
+            "min": 1.5774
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 112520,
+            "value": 0
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(95)": 17.72638499999998,
+            "avg": 10.021852906150047,
+            "min": 0.9984,
+            "med": 9.002,
+            "max": 145.0119,
+            "p(75)": 11.53465,
+            "p(90)": 14.791280000000004
+        },
+        "vus": {
+            "max": 20,
+            "value": 20,
+            "min": 20
+        },
+        "http_reqs": {
+            "count": 112520,
+            "rate": 1874.5163628669052
+        },
+        "http_req_duration": {
+            "min": 0.9984,
+            "med": 9.002,
+            "max": 145.0119,
+            "p(75)": 11.53465,
+            "p(90)": 14.791280000000004,
+            "p(95)": 17.72638499999998,
+            "avg": 10.021852906150047
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(75)": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_sending": {
+            "p(95)": 0.5264,
+            "avg": 0.06512181212228972,
+            "min": 0,
+            "med": 0,
+            "max": 46.8,
+            "p(75)": 0,
+            "p(90)": 0
+        },
+        "data_sent": {
+            "count": 17103040,
+            "rate": 284926.48715576954
+        },
+        "http_req_receiving": {
+            "p(75)": 0,
+            "p(90)": 0.9991,
+            "p(95)": 1.0007,
+            "avg": 0.1851723960184834,
+            "min": 0,
+            "med": 0,
+            "max": 130.4896
+        },
+        "http_req_blocked": {
+            "p(75)": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.02869207785282617,
+            "min": 0,
+            "med": 0,
+            "max": 23.5199
+        }
+    },
+    "root_group": {
+        "groups": {
+            "cart-update-rest-operation": {
+                "name": "cart-update-rest-operation",
+                "path": "::cart-update-rest-operation",
+                "id": "7f5c837a0c942a3c438b663414384aa3",
+                "groups": {},
+                "checks": {
+                        "HTTP status is 200": {
+                            "name": "HTTP status is 200",
+                            "path": "::cart-update-rest-operation::HTTP status is 200",
+                            "id": "3ccd5fec980e69301b7ad329ddd9fc28",
+                            "passes": 112520,
+                            "fails": 0
+                        },
+                        "update acknowledgement matches target": {
+                            "name": "update acknowledgement matches target",
+                            "path": "::cart-update-rest-operation::update acknowledgement matches target",
+                            "id": "5bdef379764502e2f822441d2091299d",
+                            "passes": 112520,
+                            "fails": 0
+                        }
+                    }
+            }
+        },
+        "checks": {},
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e"
+    }
+}

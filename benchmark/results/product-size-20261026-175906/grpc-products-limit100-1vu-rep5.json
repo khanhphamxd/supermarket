@@ -1,0 +1,102 @@
+{
+    "root_group": {
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "gRPC - single products": {
+                "checks": {
+                    "gRPC: product list status is OK": {
+                        "path": "::gRPC - single products::gRPC: product list status is OK",
+                        "id": "efc70fc888a4f9f9d284dea837961569",
+                        "passes": 30295,
+                        "fails": 0,
+                        "name": "gRPC: product list status is OK"
+                    },
+                    "gRPC: product list returned": {
+                        "path": "::gRPC - single products::gRPC: product list returned",
+                        "id": "9c18756c6af77ad1419f169ca8b4a78d",
+                        "passes": 30295,
+                        "fails": 0,
+                        "name": "gRPC: product list returned"
+                    },
+                    "gRPC: requested product count returned": {
+                        "id": "7e9ed97c1a2f7c6c184d67a62c955fba",
+                        "passes": 30295,
+                        "fails": 0,
+                        "name": "gRPC: requested product count returned",
+                        "path": "::gRPC - single products::gRPC: requested product count returned"
+                    },
+                    "gRPC: products sorted by ascending ID": {
+                        "name": "gRPC: products sorted by ascending ID",
+                        "path": "::gRPC - single products::gRPC: products sorted by ascending ID",
+                        "id": "ee24dfe8f2e56a02522417bc1937745b",
+                        "passes": 30295,
+                        "fails": 0
+                    }
+                },
+                "name": "gRPC - single products",
+                "path": "::gRPC - single products",
+                "id": "0f2a7f5eeecba9e7fc57a0c51f58fb2f",
+                "groups": {}
+            }
+        },
+        "checks": {},
+        "name": "",
+        "path": ""
+    },
+    "metrics": {
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "data_received": {
+            "count": 314765196,
+            "rate": 5246068.396142665
+        },
+        "iterations": {
+            "count": 30295,
+            "rate": 504.91491461191293
+        },
+        "grpc_req_duration": {
+            "avg": 1.2937338768773659,
+            "min": 0,
+            "med": 1.2594,
+            "max": 10.2814,
+            "p(75)": 1.5135,
+            "p(90)": 1.7181,
+            "p(95)": 1.8609899999999997
+        },
+        "checks": {
+            "passes": 121180,
+            "fails": 0,
+            "value": 1
+        },
+        "group_duration": {
+            "avg": 1.96526648291797,
+            "min": 0.5055,
+            "med": 1.8908,
+            "max": 11.4079,
+            "p(75)": 2.1696999999999997,
+            "p(90)": 2.4923,
+            "p(95)": 2.7357899999999997
+        },
+        "data_sent": {
+            "count": 1969099,
+            "rate": 32818.20278750299
+        },
+        "iteration_duration": {
+            "max": 11.4079,
+            "p(75)": 2.18235,
+            "p(90)": 2.50896,
+            "p(95)": 2.75453,
+            "avg": 1.9747381449083994,
+            "min": 0.5055,
+            "med": 1.9012
+        }
+    }
+}

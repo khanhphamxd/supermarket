@@ -1,0 +1,182 @@
+{
+    "root_group": {
+        "groups": {
+            "GraphQL - single inventory": {
+                "name": "GraphQL - single inventory",
+                "path": "::GraphQL - single inventory",
+                "id": "a3ca2027d4d90f3c5c62edfdd74af5b5",
+                "groups": {
+                    "inventory-graphql-operation": {
+                        "groups": {},
+                        "checks": {
+                                "HTTP status is 200": {
+                                    "path": "::GraphQL - single inventory::inventory-graphql-operation::HTTP status is 200",
+                                    "id": "6a9f87009decdf121383363965565b94",
+                                    "passes": 37815,
+                                    "fails": 0,
+                                    "name": "HTTP status is 200"
+                                },
+                                "GraphQL has no errors": {
+                                    "name": "GraphQL has no errors",
+                                    "path": "::GraphQL - single inventory::inventory-graphql-operation::GraphQL has no errors",
+                                    "id": "0f6395813f15616dd205f15a48c7d738",
+                                    "passes": 37815,
+                                    "fails": 0
+                                },
+                                "correct inventory item returned": {
+                                    "id": "c481266985bab7ae43e62f802605b9f2",
+                                    "passes": 37815,
+                                    "fails": 0,
+                                    "name": "correct inventory item returned",
+                                    "path": "::GraphQL - single inventory::inventory-graphql-operation::correct inventory item returned"
+                                },
+                                "correct nested product returned": {
+                                    "fails": 0,
+                                    "name": "correct nested product returned",
+                                    "path": "::GraphQL - single inventory::inventory-graphql-operation::correct nested product returned",
+                                    "id": "e844cae69a0a3dc0d796af49ef3e3d9e",
+                                    "passes": 37815
+                                }
+                            },
+                        "name": "inventory-graphql-operation",
+                        "path": "::GraphQL - single inventory::inventory-graphql-operation",
+                        "id": "757f6ffa3ed99aa4d2ca39ec8183ad0e"
+                    }
+                },
+                "checks": {}
+            }
+        },
+        "checks": {},
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "metrics": {
+        "http_req_blocked": {
+            "avg": 0.006223808012693376,
+            "min": 0,
+            "med": 0,
+            "max": 1.9365,
+            "p(75)": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 37815,
+            "value": 0
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "http_req_duration": {
+            "max": 51.5272,
+            "p(75)": 1.7153,
+            "p(90)": 2.1286399999999994,
+            "p(95)": 2.483159999999999,
+            "avg": 1.5057100700780155,
+            "min": 0,
+            "med": 1.4242
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 1.5057100700780155,
+            "min": 0,
+            "med": 1.4242,
+            "max": 51.5272,
+            "p(75)": 1.7153,
+            "p(90)": 2.1286399999999994,
+            "p(95)": 2.483159999999999
+        },
+        "http_req_receiving": {
+            "p(90)": 0.8736599999999999,
+            "p(95)": 0.9478299999999995,
+            "avg": 0.3558472114240368,
+            "min": 0,
+            "med": 0.2316,
+            "max": 18.9021,
+            "p(75)": 0.6931
+        },
+        "data_received": {
+            "count": 10217232,
+            "rate": 170285.73440744585
+        },
+        "iterations": {
+            "count": 37815,
+            "rate": 630.2445756950185
+        },
+        "checks": {
+            "passes": 151260,
+            "fails": 0,
+            "value": 1
+        },
+        "http_req_connecting": {
+            "med": 0,
+            "max": 1.6746,
+            "p(75)": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.004177487769403675,
+            "min": 0
+        },
+        "http_req_tls_handshaking": {
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(75)": 0,
+            "p(90)": 0
+        },
+        "http_req_sending": {
+            "max": 3.0984,
+            "p(75)": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.008405854819516055,
+            "min": 0,
+            "med": 0
+        },
+        "data_sent": {
+            "count": 17243640,
+            "rate": 287391.52651692845
+        },
+        "http_req_waiting": {
+            "min": 0,
+            "med": 1.0287,
+            "max": 51.5272,
+            "p(75)": 1.5106,
+            "p(90)": 1.8894199999999997,
+            "p(95)": 2.144559999999999,
+            "avg": 1.1414570038344478
+        },
+        "http_reqs": {
+            "count": 37815,
+            "rate": 630.2445756950185
+        },
+        "group_duration": {
+            "p(90)": 2.218630000000002,
+            "p(95)": 2.5516,
+            "avg": 1.5742470897791743,
+            "min": 0,
+            "med": 1.49,
+            "max": 52.5275,
+            "p(75)": 1.7888
+        },
+        "iteration_duration": {
+            "avg": 1.5822521353960013,
+            "min": 0,
+            "med": 1.4981,
+            "max": 52.5275,
+            "p(75)": 1.8005,
+            "p(90)": 2.2323999999999993,
+            "p(95)": 2.5708599999999993
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        }
+    }
+}

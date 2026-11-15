@@ -8,7 +8,7 @@ option java_multiple_files = true;
 
 // Define all services & procedures that the client can call upon
 service ProductGrpcService {
-    rpc GetProducts (Empty) returns (ProductList);
+    rpc GetProducts (ProductListRequest) returns (ProductList);
     rpc GetProduct (ProductRequest) returns (ProductResponse);
     rpc CreateProduct (CreateProductRequest) returns (Empty);
     rpc UpdateProduct (UpdateProductRequest) returns (Empty);
@@ -57,6 +57,10 @@ message ProductResponse {
 
 message ProductList {
     repeated ProductResponse products = 1;
+}
+
+message ProductListRequest {
+    int32 limit = 1;
 }
 
 message CreateProductRequest {

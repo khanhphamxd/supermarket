@@ -1,8 +1,11 @@
 package com.example.supermarket.controller;
 
+import java.util.Comparator;
 import java.util.List;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 import com.example.supermarket.model.Product;
 import com.example.supermarket.service.ProductService;
@@ -16,9 +19,29 @@ public class ProductController {
         this.productService = productService;
     }
 
-    @GetMapping 
-    public List<Product> getAllProducts() {
-        return productService.getAllProducts();
+   @GetMapping
+    public List<Product> getAllProducts(
+        @RequestParam(required = false) Integer limit) {
+
+        List<Product> products = productService.getAllProducts()
+            .stream()
+            .sorted(Comparator.comparing(Product::getId))
+            .toList();
+
+        if (limit == null) {
+            return products;
+        }
+
+        if (limit < 1) {
+            throw new ResponseStatusException(
+                HttpStatus.BAD_REQUEST,
+                "limit must be at least 1"
+            );
+        }
+
+        return products.stream()
+            .limit(limit)
+            .toList();
     }
 
     @GetMapping("/{id}") // Handle GET requests for a specific product ID

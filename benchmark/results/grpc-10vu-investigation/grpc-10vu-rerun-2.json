@@ -1,0 +1,88 @@
+{
+    "metrics": {
+        "grpc_req_duration": {
+            "p(75)": 1.4058,
+            "p(90)": 1.7133,
+            "p(95)": 1.9999,
+            "avg": 1.2889560057238783,
+            "min": 0,
+            "med": 1.2297,
+            "max": 24.1593
+        },
+        "checks": {
+            "passes": 793876,
+            "fails": 0,
+            "value": 1
+        },
+        "data_received": {
+            "count": 42870713,
+            "rate": 714494.3639315298
+        },
+        "vus": {
+            "value": 10,
+            "min": 10,
+            "max": 10
+        },
+        "vus_max": {
+            "value": 10,
+            "min": 10,
+            "max": 10
+        },
+        "data_sent": {
+            "rate": 432461.496044117,
+            "count": 25948326
+        },
+        "iteration_duration": {
+            "avg": 1.4969381492827714,
+            "min": 0,
+            "med": 1.3658,
+            "max": 26.6171,
+            "p(75)": 1.6451,
+            "p(90)": 2.0008,
+            "p(95)": 2.3095
+        },
+        "iterations": {
+            "count": 396938,
+            "rate": 6615.471121981423
+        },
+        "group_duration": {
+            "avg": 1.4696001415838458,
+            "min": 0,
+            "med": 1.3472,
+            "max": 26.6171,
+            "p(75)": 1.6078,
+            "p(90)": 1.9960299999999989,
+            "p(95)": 2.2595149999999964
+        }
+    },
+    "root_group": {
+        "groups": {
+            "gRPC - single product": {
+                "name": "gRPC - single product",
+                "path": "::gRPC - single product",
+                "id": "bb75f3ede456b640544d3d9490a218b6",
+                "groups": {},
+                "checks": {
+                        "gRPC: status is OK": {
+                            "fails": 0,
+                            "name": "gRPC: status is OK",
+                            "path": "::gRPC - single product::gRPC: status is OK",
+                            "id": "66ac9e5b30ff84e6e1102a22b33187a4",
+                            "passes": 396938
+                        },
+                        "gRPC: correct product returned": {
+                            "path": "::gRPC - single product::gRPC: correct product returned",
+                            "id": "247f19e5949c51f092167e8103af0cf5",
+                            "passes": 396938,
+                            "fails": 0,
+                            "name": "gRPC: correct product returned"
+                        }
+                    }
+            }
+        },
+        "checks": {},
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e"
+    }
+}

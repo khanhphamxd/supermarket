@@ -1,0 +1,88 @@
+{
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "gRPC - single product": {
+                "name": "gRPC - single product",
+                "path": "::gRPC - single product",
+                "id": "bb75f3ede456b640544d3d9490a218b6",
+                "groups": {},
+                "checks": {
+                        "gRPC: status is OK": {
+                            "fails": 0,
+                            "name": "gRPC: status is OK",
+                            "path": "::gRPC - single product::gRPC: status is OK",
+                            "id": "66ac9e5b30ff84e6e1102a22b33187a4",
+                            "passes": 284892
+                        },
+                        "gRPC: correct product returned": {
+                            "name": "gRPC: correct product returned",
+                            "path": "::gRPC - single product::gRPC: correct product returned",
+                            "id": "247f19e5949c51f092167e8103af0cf5",
+                            "passes": 284892,
+                            "fails": 0
+                        }
+                    }
+            }
+        },
+        "checks": {}
+    },
+    "metrics": {
+        "grpc_req_duration": {
+            "med": 1.3241,
+            "max": 631.3784,
+            "p(75)": 1.8413,
+            "p(90)": 2.4833,
+            "p(95)": 3.2458,
+            "avg": 1.8210868065793644,
+            "min": 0
+        },
+        "checks": {
+            "passes": 569784,
+            "fails": 0,
+            "value": 1
+        },
+        "group_duration": {
+            "max": 631.3784,
+            "p(75)": 2.0259,
+            "p(90)": 2.8424,
+            "p(95)": 3.6338450000000013,
+            "avg": 2.051437355208264,
+            "min": 0,
+            "med": 1.6074
+        },
+        "vus": {
+            "max": 10,
+            "value": 10,
+            "min": 10
+        },
+        "data_received": {
+            "count": 30769694,
+            "rate": 512809.74654197047
+        },
+        "iteration_duration": {
+            "max": 631.3784,
+            "p(75)": 2.073,
+            "p(90)": 2.9058899999999994,
+            "p(95)": 3.7027,
+            "avg": 2.087638916501704,
+            "min": 0,
+            "med": 1.6429
+        },
+        "vus_max": {
+            "max": 10,
+            "value": 10,
+            "min": 10
+        },
+        "iterations": {
+            "count": 284892,
+            "rate": 4748.02883356055
+        },
+        "data_sent": {
+            "count": 18654639,
+            "rate": 310899.4420751132
+        }
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "metrics": {
+        "data_sent": {
+            "count": 9727898,
+            "rate": 162117.75740428083
+        },
+        "grpc_req_duration": {
+            "avg": 3.942057783954044,
+            "min": 0.5158,
+            "med": 3.8813,
+            "max": 62.6942,
+            "p(75)": 4.5144,
+            "p(90)": 5.9939,
+            "p(95)": 6.849574999999994
+        },
+        "group_duration": {
+            "p(95)": 7.002,
+            "avg": 4.292244506692248,
+            "min": 0.7714,
+            "med": 4.0009,
+            "max": 63.217,
+            "p(75)": 5.0009,
+            "p(90)": 6.0019
+        },
+        "iteration_duration": {
+            "min": 0.7714,
+            "med": 4.0011,
+            "max": 63.217,
+            "p(75)": 5.0012,
+            "p(90)": 6.0023,
+            "p(95)": 7.0024,
+            "avg": 4.356984190009781
+        },
+        "iterations": {
+            "count": 136730,
+            "rate": 2278.63830088343
+        },
+        "vus_max": {
+            "value": 10,
+            "min": 10,
+            "max": 10
+        },
+        "vus": {
+            "value": 10,
+            "min": 10,
+            "max": 10
+        },
+        "data_received": {
+            "count": 7384812,
+            "rate": 123069.66626214852
+        },
+        "checks": {
+            "fails": 0,
+            "passes": 136730,
+            "value": 1
+        }
+    },
+    "root_group": {
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "cart-update-grpc-operation": {
+                "name": "cart-update-grpc-operation",
+                "path": "::cart-update-grpc-operation",
+                "id": "cd23cf49a2ec2674fa103c3ded4e117a",
+                "groups": {},
+                "checks": {
+                        "gRPC update status is OK": {
+                            "path": "::cart-update-grpc-operation::gRPC update status is OK",
+                            "id": "be277812816b23dab9671efe88f93710",
+                            "passes": 136730,
+                            "fails": 0,
+                            "name": "gRPC update status is OK"
+                        }
+                    }
+            }
+        },
+        "checks": {},
+        "name": "",
+        "path": ""
+    }
+}

@@ -1,0 +1,176 @@
+{
+    "metrics": {
+        "http_req_receiving": {
+            "min": 0,
+            "med": 0.2701,
+            "max": 1.5173,
+            "p(75)": 0.4638,
+            "p(90)": 0.6309,
+            "p(95)": 0.72905,
+            "avg": 0.32508772136432496
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(75)": 1.007,
+            "p(90)": 1.1791,
+            "p(95)": 1.29765,
+            "avg": 0.8727855294342709,
+            "min": 0,
+            "med": 0.8077,
+            "max": 9.0111
+        },
+        "vus_max": {
+            "min": 1,
+            "max": 1,
+            "value": 1
+        },
+        "operation_duration": {
+            "min": 0,
+            "med": 1,
+            "max": 9,
+            "p(75)": 1,
+            "p(90)": 1,
+            "p(95)": 2,
+            "avg": 0.8811735437429156
+        },
+        "group_duration": {
+            "min": 0,
+            "med": 0.8134,
+            "max": 9.0111,
+            "p(75)": 1.0181,
+            "p(90)": 1.192,
+            "p(95)": 1.32145,
+            "avg": 0.8817816328333092
+        },
+        "http_reqs": {
+            "rate": 1132.1830351918006,
+            "count": 67931
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "iterations": {
+            "count": 67931,
+            "rate": 1132.1830351918006
+        },
+        "http_req_duration": {
+            "avg": 0.8727855294342709,
+            "min": 0,
+            "med": 0.8077,
+            "max": 9.0111,
+            "p(75)": 1.007,
+            "p(90)": 1.1791,
+            "p(95)": 1.29765
+        },
+        "http_req_blocked": {
+            "min": 0,
+            "med": 0,
+            "max": 1.073,
+            "p(75)": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.0022282256996069534
+        },
+        "http_req_connecting": {
+            "max": 1.0344,
+            "p(75)": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.0017950552766778053,
+            "min": 0,
+            "med": 0
+        },
+        "checks": {
+            "passes": 203793,
+            "fails": 0,
+            "value": 1
+        },
+        "http_req_sending": {
+            "p(95)": 0,
+            "avg": 0.0010687329790522743,
+            "min": 0,
+            "med": 0,
+            "max": 1.3505,
+            "p(75)": 0,
+            "p(90)": 0
+        },
+        "iteration_duration": {
+            "min": 0,
+            "med": 0.8142,
+            "max": 9.0111,
+            "p(75)": 1.019,
+            "p(90)": 1.1932,
+            "p(95)": 1.324,
+            "avg": 0.8827180477248908
+        },
+        "http_req_tls_handshaking": {
+            "med": 0,
+            "max": 0,
+            "p(75)": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 67931,
+            "value": 0
+        },
+        "data_received": {
+            "count": 16316341,
+            "rate": 271938.9450560778
+        },
+        "http_req_waiting": {
+            "max": 9.0111,
+            "p(75)": 0.5145,
+            "p(90)": 0.5202,
+            "p(95)": 0.85145,
+            "avg": 0.5466290750908815,
+            "min": 0,
+            "med": 0.506
+        },
+        "data_sent": {
+            "count": 5502411,
+            "rate": 91706.82585053585
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "REST - single inventory": {
+                "id": "6c59b9e1fce04de381f2c5c2a7be80ce",
+                "groups": {},
+                "checks": {
+                        "HTTP status is 200": {
+                            "fails": 0,
+                            "name": "HTTP status is 200",
+                            "path": "::REST - single inventory::HTTP status is 200",
+                            "id": "3843730dda37837a5931fa0bd0380b37",
+                            "passes": 67931
+                        },
+                        "correct inventory item returned": {
+                            "passes": 67931,
+                            "fails": 0,
+                            "name": "correct inventory item returned",
+                            "path": "::REST - single inventory::correct inventory item returned",
+                            "id": "9b7ebf739d6dd01798302ee98eb45afa"
+                        },
+                        "correct nested product returned": {
+                            "name": "correct nested product returned",
+                            "path": "::REST - single inventory::correct nested product returned",
+                            "id": "2dc2db4de1af1b03b6e78ee0e6d2a93b",
+                            "passes": 67931,
+                            "fails": 0
+                        }
+                    },
+                "name": "REST - single inventory",
+                "path": "::REST - single inventory"
+            }
+        },
+        "checks": {}
+    }
+}

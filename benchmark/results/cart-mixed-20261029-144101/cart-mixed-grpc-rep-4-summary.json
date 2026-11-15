@@ -1,0 +1,116 @@
+{
+    "root_group": {
+        "checks": {},
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+                "cart-mixed-grpc-operation": {
+                    "path": "::cart-mixed-grpc-operation",
+                    "id": "e045be7ab9d0d2d494edd0573f19859f",
+                    "groups": {},
+                    "checks": {
+                            "gRPC: cart status is OK": {
+                                "path": "::cart-mixed-grpc-operation::gRPC: cart status is OK",
+                                "id": "a9fd708a279b14933d3419eebb0828b5",
+                                "passes": 17911,
+                                "fails": 0,
+                                "name": "gRPC: cart status is OK"
+                            },
+                            "gRPC: correct cart returned": {
+                                "name": "gRPC: correct cart returned",
+                                "path": "::cart-mixed-grpc-operation::gRPC: correct cart returned",
+                                "id": "56fcf4c0e5f4377b70253c31a29d5ed4",
+                                "passes": 17911,
+                                "fails": 0
+                            },
+                            "gRPC: items status is OK": {
+                                "id": "90eb62db2b2022b4564d5352377baaef",
+                                "passes": 17911,
+                                "fails": 0,
+                                "name": "gRPC: items status is OK",
+                                "path": "::cart-mixed-grpc-operation::gRPC: items status is OK"
+                            },
+                            "gRPC: expected cart item returned": {
+                                "id": "c741e3d178e6b787f1ecfe0d9d97d0d3",
+                                "passes": 17911,
+                                "fails": 0,
+                                "name": "gRPC: expected cart item returned",
+                                "path": "::cart-mixed-grpc-operation::gRPC: expected cart item returned"
+                            },
+                            "gRPC: correct nested product returned": {
+                                "name": "gRPC: correct nested product returned",
+                                "path": "::cart-mixed-grpc-operation::gRPC: correct nested product returned",
+                                "id": "724ff0d7f6f9a29df1a8b45ccc9772d4",
+                                "passes": 17911,
+                                "fails": 0
+                            },
+                            "gRPC update status is OK": {
+                                "name": "gRPC update status is OK",
+                                "path": "::cart-mixed-grpc-operation::gRPC update status is OK",
+                                "id": "7c2f9d44ae401059e0bd33efbda75ddb",
+                                "passes": 17910,
+                                "fails": 0
+                            }
+                        },
+                    "name": "cart-mixed-grpc-operation"
+                }
+            }
+    },
+    "metrics": {
+        "data_sent": {
+            "count": 3580908,
+            "rate": 59680.73678767413
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "group_duration": {
+            "avg": 1.6700345998157393,
+            "min": 0,
+            "med": 1.5482,
+            "max": 17.8011,
+            "p(75)": 1.9723,
+            "p(90)": 2.3724,
+            "p(95)": 2.6191
+        },
+        "iterations": {
+            "count": 35821,
+            "rate": 597.0060310042244
+        },
+        "grpc_req_duration": {
+            "p(75)": 1.3487,
+            "p(90)": 1.6843,
+            "p(95)": 1.9534249999999986,
+            "avg": 1.0887834772574925,
+            "min": 0,
+            "med": 1.0295,
+            "max": 15.0629
+        },
+        "iteration_duration": {
+            "avg": 1.6731011529549593,
+            "min": 0,
+            "med": 1.55,
+            "max": 17.8011,
+            "p(75)": 1.9766,
+            "p(90)": 2.3763,
+            "p(95)": 2.6252
+        },
+        "data_received": {
+            "count": 4746507,
+            "rate": 79107.04070806979
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "checks": {
+            "passes": 107465,
+            "fails": 0,
+            "value": 1
+        }
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "root_group": {
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "cart-update-grpc-operation": {
+                "name": "cart-update-grpc-operation",
+                "path": "::cart-update-grpc-operation",
+                "id": "cd23cf49a2ec2674fa103c3ded4e117a",
+                "groups": {},
+                "checks": {
+                        "gRPC update status is OK": {
+                            "name": "gRPC update status is OK",
+                            "path": "::cart-update-grpc-operation::gRPC update status is OK",
+                            "id": "be277812816b23dab9671efe88f93710",
+                            "passes": 33777,
+                            "fails": 0
+                        }
+                    }
+            }
+        },
+        "checks": {},
+        "name": "",
+        "path": ""
+    },
+    "metrics": {
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "iteration_duration": {
+            "p(75)": 2.0453,
+            "p(90)": 2.51798,
+            "p(95)": 2.9202599999999976,
+            "avg": 1.7710713740119026,
+            "min": 0,
+            "med": 1.5916,
+            "max": 38.566
+        },
+        "iterations": {
+            "count": 33777,
+            "rate": 562.9477688503428
+        },
+        "checks": {
+            "passes": 33777,
+            "fails": 0,
+            "value": 1
+        },
+        "group_duration": {
+            "p(75)": 2.0394,
+            "p(90)": 2.515,
+            "p(95)": 2.896859999999999,
+            "avg": 1.7640263640939111,
+            "min": 0,
+            "med": 1.5851,
+            "max": 38.566
+        },
+        "data_sent": {
+            "count": 2400354,
+            "rate": 40005.74144391141
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "grpc_req_duration": {
+            "avg": 1.7099608490985072,
+            "min": 0,
+            "med": 1.5445,
+            "max": 38.566,
+            "p(75)": 2.0029,
+            "p(90)": 2.4885600000000005,
+            "p(95)": 2.7802
+        },
+        "data_received": {
+            "count": 1824104,
+            "rate": 30401.61284160777
+        }
+    }
+}

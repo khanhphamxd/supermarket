@@ -1,0 +1,88 @@
+{
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "gRPC - single product": {
+                "path": "::gRPC - single product",
+                "id": "bb75f3ede456b640544d3d9490a218b6",
+                "groups": {},
+                "checks": {
+                        "gRPC: status is OK": {
+                            "name": "gRPC: status is OK",
+                            "path": "::gRPC - single product::gRPC: status is OK",
+                            "id": "66ac9e5b30ff84e6e1102a22b33187a4",
+                            "passes": 413264,
+                            "fails": 0
+                        },
+                        "gRPC: correct product returned": {
+                            "name": "gRPC: correct product returned",
+                            "path": "::gRPC - single product::gRPC: correct product returned",
+                            "id": "247f19e5949c51f092167e8103af0cf5",
+                            "passes": 413264,
+                            "fails": 0
+                        }
+                    },
+                "name": "gRPC - single product"
+            }
+        },
+        "checks": {}
+    },
+    "metrics": {
+        "grpc_req_duration": {
+            "p(95)": 4.163184999999998,
+            "avg": 2.559279160536747,
+            "min": 0,
+            "med": 2.34225,
+            "max": 58.8698,
+            "p(75)": 3.0009,
+            "p(90)": 3.725
+        },
+        "data_sent": {
+            "count": 26991190,
+            "rate": 449843.1261680906
+        },
+        "data_received": {
+            "rate": 743904.4293864694,
+            "count": 44635262
+        },
+        "vus": {
+            "min": 20,
+            "max": 20,
+            "value": 20
+        },
+        "checks": {
+            "passes": 826528,
+            "fails": 0,
+            "value": 1
+        },
+        "group_duration": {
+            "avg": 2.837037327955132,
+            "min": 0,
+            "med": 2.6788,
+            "max": 58.8698,
+            "p(75)": 3.2118,
+            "p(90)": 4.002,
+            "p(95)": 4.7744
+        },
+        "vus_max": {
+            "value": 20,
+            "min": 20,
+            "max": 20
+        },
+        "iteration_duration": {
+            "max": 58.8698,
+            "p(75)": 3.2721,
+            "p(90)": 4.0311,
+            "p(95)": 4.8842699999999954,
+            "avg": 2.881368811945965,
+            "min": 0,
+            "med": 2.7368
+        },
+        "iterations": {
+            "rate": 6887.579602556605,
+            "count": 413264
+        }
+    }
+}

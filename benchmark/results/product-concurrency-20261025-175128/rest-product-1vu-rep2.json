@@ -1,0 +1,160 @@
+{
+    "metrics": {
+        "checks": {
+            "passes": 170062,
+            "fails": 0,
+            "value": 1
+        },
+        "iteration_duration": {
+            "p(95)": 1.0434,
+            "avg": 0.7052477696369556,
+            "min": 0,
+            "med": 0.6549,
+            "max": 18.065,
+            "p(75)": 0.7787,
+            "p(90)": 0.9302
+        },
+        "http_reqs": {
+            "count": 85031,
+            "rate": 1417.1795305682597
+        },
+        "http_req_duration": {
+            "max": 17.0641,
+            "p(75)": 0.7738,
+            "p(90)": 0.9158,
+            "p(95)": 1.0329,
+            "avg": 0.6981468464442369,
+            "min": 0,
+            "med": 0.6519
+        },
+        "http_req_connecting": {
+            "min": 0,
+            "med": 0,
+            "max": 3.6041,
+            "p(75)": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.000615591960579083
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 85031,
+            "value": 0
+        },
+        "group_duration": {
+            "min": 0,
+            "med": 0.6545,
+            "max": 18.065,
+            "p(75)": 0.7782,
+            "p(90)": 0.9286,
+            "p(95)": 1.04195,
+            "avg": 0.704567019087156
+        },
+        "iterations": {
+            "count": 85031,
+            "rate": 1417.1795305682597
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "http_req_duration{expected_response:true}": {
+            "min": 0,
+            "med": 0.6519,
+            "max": 17.0641,
+            "p(75)": 0.7738,
+            "p(90)": 0.9158,
+            "p(95)": 1.0329,
+            "avg": 0.6981468464442369
+        },
+        "http_req_blocked": {
+            "p(95)": 0,
+            "avg": 0.0009366760357987089,
+            "min": 0,
+            "med": 0,
+            "max": 3.6041,
+            "p(75)": 0,
+            "p(90)": 0
+        },
+        "http_req_waiting": {
+            "max": 16.5311,
+            "p(75)": 0.5104,
+            "p(90)": 0.5167,
+            "p(95)": 0.7085,
+            "avg": 0.5195391962930561,
+            "min": 0,
+            "med": 0.5043
+        },
+        "data_sent": {
+            "count": 6802480,
+            "rate": 113374.36244546078
+        },
+        "http_req_tls_handshaking": {
+            "p(75)": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0
+        },
+        "http_req_sending": {
+            "avg": 0.000972852253883878,
+            "min": 0,
+            "med": 0,
+            "max": 1.4283,
+            "p(75)": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "data_received": {
+            "count": 17447505,
+            "rate": 290790.96971089795
+        },
+        "http_req_receiving": {
+            "med": 0.1315,
+            "max": 5.9966,
+            "p(75)": 0.2555,
+            "p(90)": 0.4091,
+            "p(95)": 0.5146,
+            "avg": 0.17763479789723757,
+            "min": 0
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "REST - single product": {
+                "name": "REST - single product",
+                "path": "::REST - single product",
+                "id": "cefb29921974c878d5ebc35eb39c1d47",
+                "groups": {},
+                "checks": {
+                        "HTTP status is 200": {
+                            "name": "HTTP status is 200",
+                            "path": "::REST - single product::HTTP status is 200",
+                            "id": "9fd643ec4a9a9fa9c43eb4654937e22f",
+                            "passes": 85031,
+                            "fails": 0
+                        },
+                        "correct product returned": {
+                            "name": "correct product returned",
+                            "path": "::REST - single product::correct product returned",
+                            "id": "bf874303523abbcbd594d7087097a104",
+                            "passes": 85031,
+                            "fails": 0
+                        }
+                    }
+            }
+        },
+        "checks": {}
+    }
+}

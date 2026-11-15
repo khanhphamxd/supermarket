@@ -1,0 +1,167 @@
+{
+    "metrics": {
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 55861,
+            "value": 0
+        },
+        "data_received": {
+            "rate": 212447.12829970827,
+            "count": 12746910
+        },
+        "http_req_blocked": {
+            "p(95)": 0,
+            "avg": 0.0024831116521365545,
+            "min": 0,
+            "med": 0,
+            "max": 1.4653,
+            "p(75)": 0,
+            "p(90)": 0
+        },
+        "data_sent": {
+            "rate": 323991.70809353807,
+            "count": 19439628
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "http_reqs": {
+            "count": 55861,
+            "rate": 931.0106554412014
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "http_req_sending": {
+            "avg": 0.0022060632641735735,
+            "min": 0,
+            "med": 0,
+            "max": 1.4971,
+            "p(75)": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "checks": {
+            "passes": 167583,
+            "fails": 0,
+            "value": 1
+        },
+        "iteration_duration": {
+            "p(95)": 1.5605,
+            "avg": 1.0735336030504343,
+            "min": 0,
+            "med": 1.0143,
+            "max": 12.7233,
+            "p(75)": 1.1631,
+            "p(90)": 1.3851
+        },
+        "http_req_receiving": {
+            "med": 0.4574,
+            "max": 3.0075,
+            "p(75)": 0.598,
+            "p(90)": 0.7351,
+            "p(95)": 0.8264,
+            "avg": 0.4604218184422035,
+            "min": 0
+        },
+        "iterations": {
+            "count": 55861,
+            "rate": 931.0106554412014
+        },
+        "http_req_connecting": {
+            "avg": 0.0017106353269723052,
+            "min": 0,
+            "med": 0,
+            "max": 1.0924,
+            "p(75)": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_tls_handshaking": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(75)": 0
+        },
+        "http_req_duration": {
+            "p(90)": 1.356,
+            "p(95)": 1.5276,
+            "avg": 1.060003467535497,
+            "min": 0,
+            "med": 1.0087,
+            "max": 12.7233,
+            "p(75)": 1.1535
+        },
+        "http_req_waiting": {
+            "avg": 0.5973755858290877,
+            "min": 0,
+            "med": 0.5048,
+            "max": 12.7233,
+            "p(75)": 0.5103,
+            "p(90)": 0.9997,
+            "p(95)": 1.4995
+        },
+        "group_duration": {
+            "avg": 1.0721972843307557,
+            "min": 0,
+            "med": 1.0138,
+            "max": 12.7233,
+            "p(75)": 1.1621,
+            "p(90)": 1.3827,
+            "p(95)": 1.5576
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(90)": 1.356,
+            "p(95)": 1.5276,
+            "avg": 1.060003467535497,
+            "min": 0,
+            "med": 1.0087,
+            "max": 12.7233,
+            "p(75)": 1.1535
+        }
+    },
+    "root_group": {
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "GraphQL - single product": {
+                "checks": {
+                    "HTTP status is 200": {
+                        "fails": 0,
+                        "name": "HTTP status is 200",
+                        "path": "::GraphQL - single product::HTTP status is 200",
+                        "id": "77d37df475f67d5cfefe7646f57200a3",
+                        "passes": 55861
+                    },
+                    "GraphQL has no errors": {
+                        "id": "1c81a636e20f9ef77a1bee9942dc904c",
+                        "passes": 55861,
+                        "fails": 0,
+                        "name": "GraphQL has no errors",
+                        "path": "::GraphQL - single product::GraphQL has no errors"
+                    },
+                    "correct product returned": {
+                        "name": "correct product returned",
+                        "path": "::GraphQL - single product::correct product returned",
+                        "id": "f1ef3754d41a8e262adc55eab28ce4ba",
+                        "passes": 55861,
+                        "fails": 0
+                    }
+                },
+                "name": "GraphQL - single product",
+                "path": "::GraphQL - single product",
+                "id": "413a7835ade2cc6c7ff4c59db5f83bb7",
+                "groups": {}
+            }
+        },
+        "checks": {},
+        "name": ""
+    }
+}

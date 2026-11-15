@@ -1,0 +1,109 @@
+{
+    "root_group": {
+        "checks": {},
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+                "gRPC - single cart": {
+                    "groups": {},
+                    "checks": {
+                            "gRPC: cart status is OK": {
+                                "name": "gRPC: cart status is OK",
+                                "path": "::gRPC - single cart::gRPC: cart status is OK",
+                                "id": "b7f85cc121e59ea023ab7424f819e192",
+                                "passes": 36279,
+                                "fails": 0
+                            },
+                            "gRPC: correct cart returned": {
+                                "passes": 36279,
+                                "fails": 0,
+                                "name": "gRPC: correct cart returned",
+                                "path": "::gRPC - single cart::gRPC: correct cart returned",
+                                "id": "12baea39bc8ca877b4d41965c43ea128"
+                            },
+                            "gRPC: items status is OK": {
+                                "id": "0573cc939ffccbdb86350f58ab7cb6f7",
+                                "passes": 36279,
+                                "fails": 0,
+                                "name": "gRPC: items status is OK",
+                                "path": "::gRPC - single cart::gRPC: items status is OK"
+                            },
+                            "gRPC: expected cart item returned": {
+                                "id": "2246049c36ebfd5f18fa8db7a55e0db1",
+                                "passes": 36279,
+                                "fails": 0,
+                                "name": "gRPC: expected cart item returned",
+                                "path": "::gRPC - single cart::gRPC: expected cart item returned"
+                            },
+                            "gRPC: correct nested product returned": {
+                                "name": "gRPC: correct nested product returned",
+                                "path": "::gRPC - single cart::gRPC: correct nested product returned",
+                                "id": "4b11e9985e25f4b808a5fe4a4a21a991",
+                                "passes": 36279,
+                                "fails": 0
+                            }
+                        },
+                    "name": "gRPC - single cart",
+                    "path": "::gRPC - single cart",
+                    "id": "b8f96bbf6b75948e76adfad70611bac9"
+                }
+            }
+    },
+    "metrics": {
+        "group_duration": {
+            "p(75)": 1.9569,
+            "p(90)": 2.2692,
+            "p(95)": 2.47592,
+            "avg": 1.652216356569908,
+            "min": 0.9112,
+            "med": 1.5445,
+            "max": 21.8357
+        },
+        "data_sent": {
+            "count": 4691906,
+            "rate": 78195.80308717015
+        },
+        "iteration_duration": {
+            "med": 1.5451,
+            "max": 21.8357,
+            "p(75)": 1.95845,
+            "p(90)": 2.2705,
+            "p(95)": 2.4793199999999995,
+            "avg": 1.6532991592932471,
+            "min": 0.9112
+        },
+        "iterations": {
+            "count": 36279,
+            "rate": 604.6296622735933
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "checks": {
+            "passes": 181395,
+            "fails": 0,
+            "value": 1
+        },
+        "data_received": {
+            "count": 7655015,
+            "rate": 127579.29199121505
+        },
+        "grpc_req_duration": {
+            "p(90)": 1.1887300000000003,
+            "p(95)": 1.3168,
+            "avg": 0.8178140108602677,
+            "min": 0,
+            "med": 0.7438,
+            "max": 21.8357,
+            "p(75)": 0.9821
+        },
+        "vus_max": {
+            "min": 1,
+            "max": 1,
+            "value": 1
+        }
+    }
+}

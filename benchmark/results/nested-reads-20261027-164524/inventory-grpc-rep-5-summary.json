@@ -1,0 +1,95 @@
+{
+    "metrics": {
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "data_sent": {
+            "count": 3840210,
+            "rate": 64002.75628797193
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "grpc_req_duration": {
+            "avg": 0.9942987184287644,
+            "min": 0,
+            "med": 0.9357,
+            "max": 22.1742,
+            "p(75)": 1.1988,
+            "p(90)": 1.4913,
+            "p(95)": 1.6688
+        },
+        "checks": {
+            "passes": 176268,
+            "fails": 0,
+            "value": 1
+        },
+        "group_duration": {
+            "p(75)": 1.2166249999999998,
+            "p(90)": 1.5256,
+            "p(95)": 1.74095,
+            "avg": 1.0171263853904349,
+            "min": 0,
+            "med": 0.9459,
+            "max": 23.1748
+        },
+        "data_received": {
+            "count": 6698330,
+            "rate": 111637.5361051638
+        },
+        "iteration_duration": {
+            "min": 0,
+            "med": 0.9466,
+            "max": 23.1748,
+            "p(75)": 1.2184249999999999,
+            "p(90)": 1.53045,
+            "p(95)": 1.7506,
+            "avg": 1.0196796225066451
+        },
+        "iterations": {
+            "count": 58756,
+            "rate": 979.2552877202234
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "gRPC - single inventory": {
+                "path": "::gRPC - single inventory",
+                "id": "60a0d015b11ab2c59294dde8f28724ca",
+                "groups": {},
+                "checks": {
+                        "gRPC: status is OK": {
+                            "id": "e70479fadb5b4db36a4ac64d3112b910",
+                            "passes": 58756,
+                            "fails": 0,
+                            "name": "gRPC: status is OK",
+                            "path": "::gRPC - single inventory::gRPC: status is OK"
+                        },
+                        "gRPC: correct inventory item returned": {
+                            "name": "gRPC: correct inventory item returned",
+                            "path": "::gRPC - single inventory::gRPC: correct inventory item returned",
+                            "id": "486cee251b650fab255983542b8f8107",
+                            "passes": 58756,
+                            "fails": 0
+                        },
+                        "gRPC: correct nested product returned": {
+                            "name": "gRPC: correct nested product returned",
+                            "path": "::gRPC - single inventory::gRPC: correct nested product returned",
+                            "id": "57f366db8d35da728eaa5ba77ebd570f",
+                            "passes": 58756,
+                            "fails": 0
+                        }
+                    },
+                "name": "gRPC - single inventory"
+            }
+        },
+        "checks": {}
+    }
+}

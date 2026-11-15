@@ -1,0 +1,81 @@
+{
+    "metrics": {
+        "group_duration": {
+            "p(90)": 6.0022,
+            "p(95)": 7.0032,
+            "avg": 4.1622060005674895,
+            "min": 0.515,
+            "med": 4.0002,
+            "max": 27.9999,
+            "p(75)": 5.0005
+        },
+        "data_sent": {
+            "rate": 167233.35105665194,
+            "count": 10034607
+        },
+        "data_received": {
+            "count": 7616523,
+            "rate": 126934.38464406865
+        },
+        "vus": {
+            "value": 10,
+            "min": 10,
+            "max": 10
+        },
+        "vus_max": {
+            "value": 10,
+            "min": 10,
+            "max": 10
+        },
+        "checks": {
+            "passes": 141020,
+            "fails": 0,
+            "value": 1
+        },
+        "iteration_duration": {
+            "p(90)": 6.0027,
+            "p(95)": 7.0541349999999685,
+            "avg": 4.223464225641905,
+            "min": 0.515,
+            "med": 4.0006,
+            "max": 27.9999,
+            "p(75)": 5.0009
+        },
+        "iterations": {
+            "count": 141020,
+            "rate": 2350.191409191118
+        },
+        "grpc_req_duration": {
+            "med": 3.5138,
+            "max": 27.9999,
+            "p(75)": 4.435,
+            "p(90)": 6.0002,
+            "p(95)": 7.0009,
+            "avg": 3.834656035314327,
+            "min": 0.515
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "cart-update-grpc-operation": {
+                "name": "cart-update-grpc-operation",
+                "path": "::cart-update-grpc-operation",
+                "id": "cd23cf49a2ec2674fa103c3ded4e117a",
+                "groups": {},
+                "checks": {
+                        "gRPC update status is OK": {
+                            "name": "gRPC update status is OK",
+                            "path": "::cart-update-grpc-operation::gRPC update status is OK",
+                            "id": "be277812816b23dab9671efe88f93710",
+                            "passes": 141020,
+                            "fails": 0
+                        }
+                    }
+            }
+        },
+        "checks": {}
+    }
+}

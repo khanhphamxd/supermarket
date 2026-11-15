@@ -1,0 +1,81 @@
+{
+    "root_group": {
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "cart-update-grpc-operation": {
+                "groups": {},
+                "checks": {
+                        "gRPC update status is OK": {
+                            "fails": 0,
+                            "name": "gRPC update status is OK",
+                            "path": "::cart-update-grpc-operation::gRPC update status is OK",
+                            "id": "be277812816b23dab9671efe88f93710",
+                            "passes": 34918
+                        }
+                    },
+                "name": "cart-update-grpc-operation",
+                "path": "::cart-update-grpc-operation",
+                "id": "cd23cf49a2ec2674fa103c3ded4e117a"
+            }
+        },
+        "checks": {},
+        "name": ""
+    },
+    "metrics": {
+        "data_received": {
+            "count": 1885718,
+            "rate": 31427.61895455221
+        },
+        "iterations": {
+            "count": 34918,
+            "rate": 581.9478833288191
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "grpc_req_duration": {
+            "avg": 1.6562840998911708,
+            "min": 0,
+            "med": 1.5124,
+            "max": 57.1702,
+            "p(75)": 1.9581,
+            "p(90)": 2.38496,
+            "p(95)": 2.6810600000000004
+        },
+        "data_sent": {
+            "count": 2486444,
+            "rate": 41439.39580776798
+        },
+        "vus_max": {
+            "max": 1,
+            "value": 1,
+            "min": 1
+        },
+        "group_duration": {
+            "avg": 1.7067488601867207,
+            "min": 0,
+            "med": 1.5285,
+            "max": 57.1702,
+            "p(75)": 1.9999,
+            "p(90)": 2.46953,
+            "p(95)": 2.775390000000001
+        },
+        "iteration_duration": {
+            "p(75)": 2.0004,
+            "p(90)": 2.48123,
+            "p(95)": 2.7955,
+            "avg": 1.7138289850506885,
+            "min": 0,
+            "med": 1.534,
+            "max": 57.1702
+        },
+        "checks": {
+            "passes": 34918,
+            "fails": 0,
+            "value": 1
+        }
+    }
+}

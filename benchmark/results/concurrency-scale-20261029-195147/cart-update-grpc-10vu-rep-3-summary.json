@@ -1,0 +1,81 @@
+{
+    "metrics": {
+        "vus_max": {
+            "value": 10,
+            "min": 10,
+            "max": 10
+        },
+        "checks": {
+            "passes": 138060,
+            "fails": 0,
+            "value": 1
+        },
+        "group_duration": {
+            "min": 0.5224,
+            "med": 4.0007,
+            "max": 60.3201,
+            "p(75)": 5.0009,
+            "p(90)": 6.0031,
+            "p(95)": 7.121524999999994,
+            "avg": 4.258117058525565
+        },
+        "iteration_duration": {
+            "med": 4.0009,
+            "max": 60.9567,
+            "p(75)": 5.0013,
+            "p(90)": 6.05381,
+            "p(95)": 7.235824999999994,
+            "avg": 4.316512805302354,
+            "min": 0.5224
+        },
+        "grpc_req_duration": {
+            "med": 3.71035,
+            "max": 60.3201,
+            "p(75)": 4.594525,
+            "p(90)": 6.0008,
+            "p(95)": 7.0014,
+            "avg": 3.937522590902805,
+            "min": 0.5224
+        },
+        "data_received": {
+            "count": 7456683,
+            "rate": 124271.81176216924
+        },
+        "data_sent": {
+            "count": 9858646,
+            "rate": 164302.5189540527
+        },
+        "vus": {
+            "min": 10,
+            "max": 10,
+            "value": 10
+        },
+        "iterations": {
+            "count": 138060,
+            "rate": 2300.884499432936
+        }
+    },
+    "root_group": {
+        "groups": {
+            "cart-update-grpc-operation": {
+                "groups": {},
+                "checks": {
+                        "gRPC update status is OK": {
+                            "name": "gRPC update status is OK",
+                            "path": "::cart-update-grpc-operation::gRPC update status is OK",
+                            "id": "be277812816b23dab9671efe88f93710",
+                            "passes": 138060,
+                            "fails": 0
+                        }
+                    },
+                "name": "cart-update-grpc-operation",
+                "path": "::cart-update-grpc-operation",
+                "id": "cd23cf49a2ec2674fa103c3ded4e117a"
+            }
+        },
+        "checks": {},
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e"
+    }
+}

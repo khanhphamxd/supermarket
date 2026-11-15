@@ -1,0 +1,160 @@
+{
+    "metrics": {
+        "iterations": {
+            "count": 82057,
+            "rate": 1367.614202681745
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "http_req_sending": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.0010422998647281769,
+            "min": 0,
+            "med": 0,
+            "max": 2.0074,
+            "p(75)": 0
+        },
+        "data_sent": {
+            "count": 6564560,
+            "rate": 109409.13621453958
+        },
+        "iteration_duration": {
+            "min": 0,
+            "med": 0.6769,
+            "max": 20.3082,
+            "p(75)": 0.8146,
+            "p(90)": 0.9999,
+            "p(95)": 1.1153199999999996,
+            "avg": 0.7306128191379153
+        },
+        "group_duration": {
+            "p(95)": 1.1133,
+            "avg": 0.7298150821989577,
+            "min": 0,
+            "med": 0.6765,
+            "max": 20.3082,
+            "p(75)": 0.8139,
+            "p(90)": 0.9983
+        },
+        "http_req_tls_handshaking": {
+            "med": 0,
+            "max": 0,
+            "p(75)": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0
+        },
+        "vus_max": {
+            "max": 1,
+            "value": 1,
+            "min": 1
+        },
+        "http_req_connecting": {
+            "min": 0,
+            "med": 0,
+            "max": 0.9991,
+            "p(75)": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.0009726641237188784
+        },
+        "http_req_waiting": {
+            "avg": 0.5109403829045318,
+            "min": 0,
+            "med": 0.5044,
+            "max": 20.3082,
+            "p(75)": 0.5104,
+            "p(90)": 0.5158,
+            "p(95)": 0.6776199999999997
+        },
+        "http_reqs": {
+            "count": 82057,
+            "rate": 1367.614202681745
+        },
+        "checks": {
+            "passes": 164114,
+            "fails": 0,
+            "value": 1
+        },
+        "data_received": {
+            "rate": 280620.5777485924,
+            "count": 16837265
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(75)": 0.8085,
+            "p(90)": 0.9814,
+            "p(95)": 1.0962199999999998,
+            "avg": 0.721398781334923,
+            "min": 0,
+            "med": 0.6726,
+            "max": 20.3082
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 82057,
+            "value": 0
+        },
+        "http_req_blocked": {
+            "min": 0,
+            "med": 0,
+            "max": 1.3137,
+            "p(75)": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.0013634961063650878
+        },
+        "http_req_receiving": {
+            "avg": 0.20941609856563306,
+            "min": 0,
+            "med": 0.1594,
+            "max": 6.8086,
+            "p(75)": 0.3044,
+            "p(90)": 0.5034,
+            "p(95)": 0.5481
+        },
+        "http_req_duration": {
+            "max": 20.3082,
+            "p(75)": 0.8085,
+            "p(90)": 0.9814,
+            "p(95)": 1.0962199999999998,
+            "avg": 0.721398781334923,
+            "min": 0,
+            "med": 0.6726
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "REST - single product": {
+                "groups": {},
+                "checks": {
+                        "HTTP status is 200": {
+                            "fails": 0,
+                            "name": "HTTP status is 200",
+                            "path": "::REST - single product::HTTP status is 200",
+                            "id": "9fd643ec4a9a9fa9c43eb4654937e22f",
+                            "passes": 82057
+                        },
+                        "correct product returned": {
+                            "passes": 82057,
+                            "fails": 0,
+                            "name": "correct product returned",
+                            "path": "::REST - single product::correct product returned",
+                            "id": "bf874303523abbcbd594d7087097a104"
+                        }
+                    },
+                "name": "REST - single product",
+                "path": "::REST - single product",
+                "id": "cefb29921974c878d5ebc35eb39c1d47"
+            }
+        },
+        "checks": {}
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "metrics": {
+        "data_sent": {
+            "count": 2821873,
+            "rate": 47030.19956021751
+        },
+        "iteration_duration": {
+            "avg": 1.5074277401826368,
+            "min": 0,
+            "med": 1.4458,
+            "max": 9.5119,
+            "p(75)": 1.7802,
+            "p(90)": 2.0775,
+            "p(95)": 2.3042499999999997
+        },
+        "iterations": {
+            "count": 39751,
+            "rate": 662.5023389494163
+        },
+        "vus": {
+            "min": 1,
+            "max": 1,
+            "value": 1
+        },
+        "grpc_req_duration": {
+            "avg": 1.4798226157832508,
+            "min": 0,
+            "med": 1.42,
+            "max": 8.5126,
+            "p(75)": 1.75385,
+            "p(90)": 2.0515,
+            "p(95)": 2.24925
+        },
+        "data_received": {
+            "rate": 35777.559583978065,
+            "count": 2146700
+        },
+        "checks": {
+            "passes": 39751,
+            "fails": 0,
+            "value": 1
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "group_duration": {
+            "p(90)": 2.074,
+            "p(95)": 2.2967,
+            "avg": 1.504194563658777,
+            "min": 0,
+            "med": 1.4431,
+            "max": 9.5119,
+            "p(75)": 1.7771499999999998
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "cart-update-grpc-operation": {
+                "name": "cart-update-grpc-operation",
+                "path": "::cart-update-grpc-operation",
+                "id": "cd23cf49a2ec2674fa103c3ded4e117a",
+                "groups": {},
+                "checks": {
+                        "gRPC update status is OK": {
+                            "name": "gRPC update status is OK",
+                            "path": "::cart-update-grpc-operation::gRPC update status is OK",
+                            "id": "be277812816b23dab9671efe88f93710",
+                            "passes": 39751,
+                            "fails": 0
+                        }
+                    }
+            }
+        },
+        "checks": {}
+    }
+}

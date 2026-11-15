@@ -1,0 +1,102 @@
+{
+    "root_group": {
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "gRPC - single products": {
+                "path": "::gRPC - single products",
+                "id": "0f2a7f5eeecba9e7fc57a0c51f58fb2f",
+                "groups": {},
+                "checks": {
+                        "gRPC: product list status is OK": {
+                            "name": "gRPC: product list status is OK",
+                            "path": "::gRPC - single products::gRPC: product list status is OK",
+                            "id": "efc70fc888a4f9f9d284dea837961569",
+                            "passes": 51792,
+                            "fails": 0
+                        },
+                        "gRPC: product list returned": {
+                            "name": "gRPC: product list returned",
+                            "path": "::gRPC - single products::gRPC: product list returned",
+                            "id": "9c18756c6af77ad1419f169ca8b4a78d",
+                            "passes": 51792,
+                            "fails": 0
+                        },
+                        "gRPC: requested product count returned": {
+                            "id": "7e9ed97c1a2f7c6c184d67a62c955fba",
+                            "passes": 51792,
+                            "fails": 0,
+                            "name": "gRPC: requested product count returned",
+                            "path": "::gRPC - single products::gRPC: requested product count returned"
+                        },
+                        "gRPC: products sorted by ascending ID": {
+                            "name": "gRPC: products sorted by ascending ID",
+                            "path": "::gRPC - single products::gRPC: products sorted by ascending ID",
+                            "id": "ee24dfe8f2e56a02522417bc1937745b",
+                            "passes": 51792,
+                            "fails": 0
+                        }
+                    },
+                "name": "gRPC - single products"
+            }
+        },
+        "checks": {},
+        "name": ""
+    },
+    "metrics": {
+        "checks": {
+            "passes": 207168,
+            "fails": 0,
+            "value": 1
+        },
+        "group_duration": {
+            "min": 0,
+            "med": 1.0491,
+            "max": 20.05,
+            "p(75)": 1.4362249999999999,
+            "p(90)": 1.7312900000000002,
+            "p(95)": 1.9258449999999996,
+            "avg": 1.1527434256255735
+        },
+        "data_sent": {
+            "count": 3367095,
+            "rate": 56117.59220829
+        },
+        "iteration_duration": {
+            "avg": 1.1562654521933833,
+            "min": 0,
+            "med": 1.0509,
+            "max": 20.05,
+            "p(75)": 1.4428,
+            "p(90)": 1.7378900000000002,
+            "p(95)": 1.9334449999999996
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "data_received": {
+            "rate": 811400.9223621885,
+            "count": 48684626
+        },
+        "iterations": {
+            "count": 51792,
+            "rate": 863.1898819759334
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "grpc_req_duration": {
+            "med": 1.0326,
+            "max": 17.868,
+            "p(75)": 1.3701,
+            "p(90)": 1.6741,
+            "p(95)": 1.8395449999999995,
+            "avg": 1.1101275756873619,
+            "min": 0
+        }
+    }
+}

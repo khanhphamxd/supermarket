@@ -1,0 +1,109 @@
+{
+    "root_group": {
+        "groups": {
+            "gRPC - single cart": {
+                "name": "gRPC - single cart",
+                "path": "::gRPC - single cart",
+                "id": "b8f96bbf6b75948e76adfad70611bac9",
+                "groups": {},
+                "checks": {
+                        "gRPC: cart status is OK": {
+                            "passes": 35247,
+                            "fails": 0,
+                            "name": "gRPC: cart status is OK",
+                            "path": "::gRPC - single cart::gRPC: cart status is OK",
+                            "id": "b7f85cc121e59ea023ab7424f819e192"
+                        },
+                        "gRPC: correct cart returned": {
+                            "fails": 0,
+                            "name": "gRPC: correct cart returned",
+                            "path": "::gRPC - single cart::gRPC: correct cart returned",
+                            "id": "12baea39bc8ca877b4d41965c43ea128",
+                            "passes": 35247
+                        },
+                        "gRPC: items status is OK": {
+                            "name": "gRPC: items status is OK",
+                            "path": "::gRPC - single cart::gRPC: items status is OK",
+                            "id": "0573cc939ffccbdb86350f58ab7cb6f7",
+                            "passes": 35247,
+                            "fails": 0
+                        },
+                        "gRPC: expected cart item returned": {
+                            "id": "2246049c36ebfd5f18fa8db7a55e0db1",
+                            "passes": 35247,
+                            "fails": 0,
+                            "name": "gRPC: expected cart item returned",
+                            "path": "::gRPC - single cart::gRPC: expected cart item returned"
+                        },
+                        "gRPC: correct nested product returned": {
+                            "name": "gRPC: correct nested product returned",
+                            "path": "::gRPC - single cart::gRPC: correct nested product returned",
+                            "id": "4b11e9985e25f4b808a5fe4a4a21a991",
+                            "passes": 35247,
+                            "fails": 0
+                        }
+                    }
+            }
+        },
+        "checks": {},
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "metrics": {
+        "grpc_req_duration": {
+            "max": 6.8318,
+            "p(75)": 0.9844,
+            "p(90)": 1.1839,
+            "p(95)": 1.3414,
+            "avg": 0.8308518540584949,
+            "min": 0,
+            "med": 0.772
+        },
+        "group_duration": {
+            "avg": 1.6986326949811386,
+            "min": 0,
+            "med": 1.5997,
+            "max": 8.45,
+            "p(75)": 1.9568500000000002,
+            "p(90)": 2.2549,
+            "p(95)": 2.481409999999999
+        },
+        "iteration_duration": {
+            "med": 1.6022,
+            "max": 8.45,
+            "p(75)": 1.95975,
+            "p(90)": 2.2575,
+            "p(95)": 2.4856399999999996,
+            "avg": 1.7009122421766452,
+            "min": 0
+        },
+        "iterations": {
+            "count": 35247,
+            "rate": 587.4313705931339
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "checks": {
+            "passes": 176235,
+            "fails": 0,
+            "value": 1
+        },
+        "data_sent": {
+            "count": 4585348,
+            "rate": 76420.04313236546
+        },
+        "data_received": {
+            "rate": 123950.45245131792,
+            "count": 7437263
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        }
+    }
+}

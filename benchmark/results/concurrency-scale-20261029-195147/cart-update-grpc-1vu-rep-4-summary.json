@@ -1,0 +1,81 @@
+{
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "cart-update-grpc-operation": {
+                "id": "cd23cf49a2ec2674fa103c3ded4e117a",
+                "groups": {},
+                "checks": {
+                        "gRPC update status is OK": {
+                            "fails": 0,
+                            "name": "gRPC update status is OK",
+                            "path": "::cart-update-grpc-operation::gRPC update status is OK",
+                            "id": "be277812816b23dab9671efe88f93710",
+                            "passes": 39001
+                        }
+                    },
+                "name": "cart-update-grpc-operation",
+                "path": "::cart-update-grpc-operation"
+            }
+        },
+        "checks": {}
+    },
+    "metrics": {
+        "grpc_req_duration": {
+            "max": 20.739,
+            "p(75)": 1.7782,
+            "p(90)": 2.0697,
+            "p(95)": 2.2716,
+            "avg": 1.5056301633291431,
+            "min": 0,
+            "med": 1.4732
+        },
+        "checks": {
+            "passes": 39001,
+            "fails": 0,
+            "value": 1
+        },
+        "group_duration": {
+            "p(95)": 2.3179,
+            "avg": 1.532318796953922,
+            "min": 0,
+            "med": 1.4994,
+            "max": 20.739,
+            "p(75)": 1.8035,
+            "p(90)": 2.0968
+        },
+        "data_sent": {
+            "count": 2772726,
+            "rate": 46210.556413380604
+        },
+        "iteration_duration": {
+            "p(90)": 2.1012,
+            "p(95)": 2.3248,
+            "avg": 1.5359038383631158,
+            "min": 0,
+            "med": 1.5035,
+            "max": 20.739,
+            "p(75)": 1.8076
+        },
+        "iterations": {
+            "count": 39001,
+            "rate": 649.9949546685309
+        },
+        "data_received": {
+            "count": 2106200,
+            "rate": 35102.16080415527
+        },
+        "vus": {
+            "min": 1,
+            "max": 1,
+            "value": 1
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        }
+    }
+}

@@ -1,0 +1,195 @@
+{
+    "metrics": {
+        "checks": {
+            "passes": 117473,
+            "fails": 0,
+            "value": 1
+        },
+        "http_req_waiting": {
+            "p(75)": 2.3265,
+            "p(90)": 2.9429200000000004,
+            "p(95)": 3.5096,
+            "avg": 1.8900829074889607,
+            "min": 0,
+            "med": 1.5111,
+            "max": 35.0094
+        },
+        "iteration_duration": {
+            "min": 0.5068,
+            "med": 2.0569,
+            "max": 39.0082,
+            "p(75)": 2.6005,
+            "p(90)": 3.310540000000001,
+            "p(95)": 3.88388,
+            "avg": 2.2947589542233207
+        },
+        "group_duration": {
+            "med": 2.052,
+            "max": 39.0082,
+            "p(75)": 2.5917,
+            "p(90)": 3.2869200000000003,
+            "p(95)": 3.8649599999999995,
+            "avg": 2.2881554338249304,
+            "min": 0.5068
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "http_reqs": {
+            "count": 26105,
+            "rate": 435.080667013979
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 26105,
+            "value": 0
+        },
+        "iterations": {
+            "count": 26105,
+            "rate": 435.080667013979
+        },
+        "http_req_blocked": {
+            "med": 0,
+            "max": 2.0005,
+            "p(75)": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.005783727255315074,
+            "min": 0
+        },
+        "http_req_tls_handshaking": {
+            "p(95)": 0,
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(75)": 0,
+            "p(90)": 0
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(75)": 2.5272,
+            "p(90)": 3.1864000000000012,
+            "p(95)": 3.725619999999998,
+            "avg": 2.224477238076996,
+            "min": 0,
+            "med": 2.0162,
+            "max": 36.0076
+        },
+        "data_received": {
+            "count": 6387719,
+            "rate": 106461.33090281046
+        },
+        "http_req_duration": {
+            "med": 2.0162,
+            "max": 36.0076,
+            "p(75)": 2.5272,
+            "p(90)": 3.1864000000000012,
+            "p(95)": 3.725619999999998,
+            "avg": 2.224477238076996,
+            "min": 0
+        },
+        "http_req_connecting": {
+            "p(95)": 0,
+            "avg": 0.003923462938134457,
+            "min": 0,
+            "med": 0,
+            "max": 2.0005,
+            "p(75)": 0,
+            "p(90)": 0
+        },
+        "http_req_receiving": {
+            "p(95)": 0.9611599999999999,
+            "avg": 0.32556803294388004,
+            "min": 0,
+            "med": 0.2241,
+            "max": 6,
+            "p(75)": 0.586,
+            "p(90)": 0.8785200000000004
+        },
+        "http_req_sending": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.008826297644129483,
+            "min": 0,
+            "med": 0,
+            "max": 2.0026,
+            "p(75)": 0
+        },
+        "data_sent": {
+            "count": 15963145,
+            "rate": 266050.78621876513
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "cart-mixed-graphql-operation": {
+                "name": "cart-mixed-graphql-operation",
+                "path": "::cart-mixed-graphql-operation",
+                "id": "e8047bf5be4e2a6bc6dc805878c1cd71",
+                "groups": {},
+                "checks": {
+                        "HTTP status is 200": {
+                            "passes": 26105,
+                            "fails": 0,
+                            "name": "HTTP status is 200",
+                            "path": "::cart-mixed-graphql-operation::HTTP status is 200",
+                            "id": "68ac8009a3309d8615627e51d671c97f"
+                        },
+                        "GraphQL has no errors": {
+                            "name": "GraphQL has no errors",
+                            "path": "::cart-mixed-graphql-operation::GraphQL has no errors",
+                            "id": "6105c2fd969b530f27a1c7f1b6e229f6",
+                            "passes": 26105,
+                            "fails": 0
+                        },
+                        "correct cart returned": {
+                            "path": "::cart-mixed-graphql-operation::correct cart returned",
+                            "id": "afba2fcdba79c63b983f89536d74e4ee",
+                            "passes": 13053,
+                            "fails": 0,
+                            "name": "correct cart returned"
+                        },
+                        "expected cart item returned": {
+                            "passes": 13053,
+                            "fails": 0,
+                            "name": "expected cart item returned",
+                            "path": "::cart-mixed-graphql-operation::expected cart item returned",
+                            "id": "6465339b030d5e51c1323322e27c98d8"
+                        },
+                        "correct nested product returned": {
+                            "name": "correct nested product returned",
+                            "path": "::cart-mixed-graphql-operation::correct nested product returned",
+                            "id": "e929e974563ff4926e5d75fd6141d37b",
+                            "passes": 13053,
+                            "fails": 0
+                        },
+                        "correct cart item returned": {
+                            "name": "correct cart item returned",
+                            "path": "::cart-mixed-graphql-operation::correct cart item returned",
+                            "id": "28aeca2c7bc8dd942c55f2a6f4a08dcf",
+                            "passes": 13052,
+                            "fails": 0
+                        },
+                        "updated quantity returned": {
+                            "name": "updated quantity returned",
+                            "path": "::cart-mixed-graphql-operation::updated quantity returned",
+                            "id": "bcab702382fe00b025fa4670c5a61768",
+                            "passes": 13052,
+                            "fails": 0
+                        }
+                    }
+            }
+        },
+        "checks": {}
+    }
+}

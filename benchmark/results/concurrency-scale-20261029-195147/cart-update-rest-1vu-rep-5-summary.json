@@ -1,0 +1,160 @@
+{
+    "metrics": {
+        "http_req_duration": {
+            "avg": 1.573159027293676,
+            "min": 0,
+            "med": 1.5076,
+            "max": 10.628,
+            "p(75)": 1.8566,
+            "p(90)": 2.14713,
+            "p(95)": 2.3519300000000003
+        },
+        "http_req_sending": {
+            "avg": 0.0043293420558743086,
+            "min": 0,
+            "med": 0,
+            "max": 1.6272,
+            "p(75)": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_waiting": {
+            "p(90)": 1.6440600000000005,
+            "p(95)": 2.021415,
+            "avg": 1.1590314869429896,
+            "min": 0,
+            "med": 1.294,
+            "max": 10.628,
+            "p(75)": 1.5098
+        },
+        "group_duration": {
+            "p(75)": 1.8865,
+            "p(90)": 2.1753,
+            "p(95)": 2.4116150000000003,
+            "avg": 1.6031557590219174,
+            "min": 0,
+            "med": 1.5088,
+            "max": 12.4985
+        },
+        "http_req_connecting": {
+            "avg": 0.002770086867928575,
+            "min": 0,
+            "med": 0,
+            "max": 4.0379,
+            "p(75)": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "iterations": {
+            "count": 37298,
+            "rate": 621.6159125473843
+        },
+        "http_reqs": {
+            "rate": 621.6159125473843,
+            "count": 37298
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 37298,
+            "value": 0
+        },
+        "http_req_receiving": {
+            "p(75)": 0.773075,
+            "p(90)": 0.8999,
+            "p(95)": 0.9524,
+            "avg": 0.40979819829481384,
+            "min": 0,
+            "med": 0.36485,
+            "max": 7.0004
+        },
+        "data_sent": {
+            "count": 5669296,
+            "rate": 94485.6187072024
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "data_received": {
+            "count": 6235834,
+            "rate": 103927.65409416068
+        },
+        "iteration_duration": {
+            "min": 0,
+            "med": 1.509,
+            "max": 12.4985,
+            "p(75)": 1.8908,
+            "p(90)": 2.17973,
+            "p(95)": 2.419220000000001,
+            "avg": 1.6068073301517358
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(90)": 2.14713,
+            "p(95)": 2.3519300000000003,
+            "avg": 1.573159027293676,
+            "min": 0,
+            "med": 1.5076,
+            "max": 10.628,
+            "p(75)": 1.8566
+        },
+        "http_req_blocked": {
+            "avg": 0.0041080165156308635,
+            "min": 0,
+            "med": 0,
+            "max": 5.0381,
+            "p(75)": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(75)": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "checks": {
+            "passes": 74596,
+            "fails": 0,
+            "value": 1
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "cart-update-rest-operation": {
+                "name": "cart-update-rest-operation",
+                "path": "::cart-update-rest-operation",
+                "id": "7f5c837a0c942a3c438b663414384aa3",
+                "groups": {},
+                "checks": {
+                        "HTTP status is 200": {
+                            "name": "HTTP status is 200",
+                            "path": "::cart-update-rest-operation::HTTP status is 200",
+                            "id": "3ccd5fec980e69301b7ad329ddd9fc28",
+                            "passes": 37298,
+                            "fails": 0
+                        },
+                        "update acknowledgement matches target": {
+                            "fails": 0,
+                            "name": "update acknowledgement matches target",
+                            "path": "::cart-update-rest-operation::update acknowledgement matches target",
+                            "id": "5bdef379764502e2f822441d2091299d",
+                            "passes": 37298
+                        }
+                    }
+            }
+        },
+        "checks": {}
+    }
+}

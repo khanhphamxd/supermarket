@@ -1,6 +1,7 @@
 package com.example.supermarket.controller;
 
 import java.math.BigDecimal;
+import java.util.Comparator;
 import java.util.List;
 
 import org.springframework.graphql.data.method.annotation.Argument;
@@ -22,8 +23,26 @@ public class ProductGraphqlController {
 
     // mapped this method into the "products" query
     @QueryMapping
-    public List<Product> products() {
-        return productService.getAllProducts();
+    public List<Product> products(@Argument("limit") Integer limit) {
+
+        List<Product> products = productService.getAllProducts()
+            .stream()
+            .sorted(Comparator.comparing(Product::getId))
+            .toList();
+
+        if (limit == null) {
+            return products;
+        }
+
+        if (limit < 1) {
+            throw new IllegalArgumentException(
+                "limit must be at least 1"
+            );
+        }
+
+        return products.stream()
+            .limit(limit)
+            .toList();
     }
 
     @QueryMapping

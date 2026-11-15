@@ -1,0 +1,116 @@
+{
+    "metrics": {
+        "grpc_req_duration": {
+            "avg": 1.3370084174380967,
+            "min": 0,
+            "med": 1.2284,
+            "max": 25.7017,
+            "p(75)": 1.6105,
+            "p(90)": 2.1111,
+            "p(95)": 2.5121
+        },
+        "data_received": {
+            "count": 3807401,
+            "rate": 63455.910546102736
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "checks": {
+            "passes": 86202,
+            "fails": 0,
+            "value": 1
+        },
+        "group_duration": {
+            "med": 1.91215,
+            "max": 40.4665,
+            "p(75)": 2.3995,
+            "p(90)": 3.00467,
+            "p(95)": 3.5144049999999996,
+            "avg": 2.0783970592329633,
+            "min": 0
+        },
+        "data_sent": {
+            "count": 2888600,
+            "rate": 48142.74703491236
+        },
+        "iteration_duration": {
+            "p(95)": 3.5261349999999996,
+            "avg": 2.084431753323588,
+            "min": 0,
+            "med": 1.9158,
+            "max": 40.4665,
+            "p(75)": 2.405775,
+            "p(90)": 3.01738
+        },
+        "iterations": {
+            "count": 28734,
+            "rate": 478.8941678671923
+        }
+    },
+    "root_group": {
+        "checks": {},
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+                "cart-mixed-grpc-operation": {
+                    "checks": {
+                        "gRPC: cart status is OK": {
+                            "name": "gRPC: cart status is OK",
+                            "path": "::cart-mixed-grpc-operation::gRPC: cart status is OK",
+                            "id": "a9fd708a279b14933d3419eebb0828b5",
+                            "passes": 14367,
+                            "fails": 0
+                        },
+                        "gRPC: correct cart returned": {
+                            "passes": 14367,
+                            "fails": 0,
+                            "name": "gRPC: correct cart returned",
+                            "path": "::cart-mixed-grpc-operation::gRPC: correct cart returned",
+                            "id": "56fcf4c0e5f4377b70253c31a29d5ed4"
+                        },
+                        "gRPC: items status is OK": {
+                            "name": "gRPC: items status is OK",
+                            "path": "::cart-mixed-grpc-operation::gRPC: items status is OK",
+                            "id": "90eb62db2b2022b4564d5352377baaef",
+                            "passes": 14367,
+                            "fails": 0
+                        },
+                        "gRPC: expected cart item returned": {
+                            "id": "c741e3d178e6b787f1ecfe0d9d97d0d3",
+                            "passes": 14367,
+                            "fails": 0,
+                            "name": "gRPC: expected cart item returned",
+                            "path": "::cart-mixed-grpc-operation::gRPC: expected cart item returned"
+                        },
+                        "gRPC: correct nested product returned": {
+                            "name": "gRPC: correct nested product returned",
+                            "path": "::cart-mixed-grpc-operation::gRPC: correct nested product returned",
+                            "id": "724ff0d7f6f9a29df1a8b45ccc9772d4",
+                            "passes": 14367,
+                            "fails": 0
+                        },
+                        "gRPC update status is OK": {
+                            "name": "gRPC update status is OK",
+                            "path": "::cart-mixed-grpc-operation::gRPC update status is OK",
+                            "id": "7c2f9d44ae401059e0bd33efbda75ddb",
+                            "passes": 14367,
+                            "fails": 0
+                        }
+                    },
+                    "name": "cart-mixed-grpc-operation",
+                    "path": "::cart-mixed-grpc-operation",
+                    "id": "e045be7ab9d0d2d494edd0573f19859f",
+                    "groups": {}
+                }
+            }
+    }
+}

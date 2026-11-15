@@ -1,0 +1,7 @@
+﻿"Entity","Protocol","VUs","Duration","ExitCode","ChecksPassed","ChecksFailed","GroupAvgMs","GroupP95Ms","Status","LogFile","SummaryFile"
+"cart-update","rest","5","10s","0","18344","0","5.384223844308762","9.906404999999996","PASS","cart-update-rest-5vu-10s.log","cart-update-rest-5vu-10s-summary.json"
+"cart-update","graphql","5","10s","0","38752","0","5.104562551610248","8.414464999999996","PASS","cart-update-graphql-5vu-10s.log","cart-update-graphql-5vu-10s-summary.json"
+"cart-update","grpc","5","10s","0","16669","0","2.93029361089449","5.1887599999999985","PASS","cart-update-grpc-5vu-10s.log","cart-update-grpc-5vu-10s-summary.json"
+"cart-mixed","rest","5","10s","0","54732","0","2.678839034150104","5.344929999999992","PASS","cart-mixed-rest-5vu-10s.log","cart-mixed-rest-5vu-10s-summary.json"
+"cart-mixed","graphql","5","10s","0","57007","0","3.899471084622691","6.8824999999999985","PASS","cart-mixed-graphql-5vu-10s.log","cart-mixed-graphql-5vu-10s-summary.json"
+"cart-mixed","grpc","5","10s","0","48395","0","3.0423447337424956","5.3578","PASS","cart-mixed-grpc-5vu-10s.log","cart-mixed-grpc-5vu-10s-summary.json"

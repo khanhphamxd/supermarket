@@ -1,0 +1,102 @@
+{
+    "metrics": {
+        "checks": {
+            "passes": 207632,
+            "fails": 0,
+            "value": 1
+        },
+        "group_duration": {
+            "avg": 1.1497434749942108,
+            "min": 0,
+            "med": 1.0758,
+            "max": 15.5148,
+            "p(75)": 1.3735,
+            "p(90)": 1.6193300000000002,
+            "p(95)": 1.821529999999999
+        },
+        "data_sent": {
+            "count": 3392559,
+            "rate": 56541.312138319285
+        },
+        "data_received": {
+            "count": 48793666,
+            "rate": 813208.5247976225
+        },
+        "iteration_duration": {
+            "max": 15.5148,
+            "p(75)": 1.3788,
+            "p(90)": 1.6251,
+            "p(95)": 1.8328299999999988,
+            "avg": 1.1533658491947194,
+            "min": 0,
+            "med": 1.0783
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "vus": {
+            "min": 1,
+            "max": 1,
+            "value": 1
+        },
+        "grpc_req_duration": {
+            "avg": 1.0902077656623188,
+            "min": 0,
+            "med": 1.04365,
+            "max": 14.5134,
+            "p(75)": 1.312325,
+            "p(90)": 1.574,
+            "p(95)": 1.7387299999999988
+        },
+        "iterations": {
+            "count": 51908,
+            "rate": 865.1128633211324
+        }
+    },
+    "root_group": {
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "gRPC - single products": {
+                "path": "::gRPC - single products",
+                "id": "0f2a7f5eeecba9e7fc57a0c51f58fb2f",
+                "groups": {},
+                "checks": {
+                        "gRPC: product list status is OK": {
+                            "fails": 0,
+                            "name": "gRPC: product list status is OK",
+                            "path": "::gRPC - single products::gRPC: product list status is OK",
+                            "id": "efc70fc888a4f9f9d284dea837961569",
+                            "passes": 51908
+                        },
+                        "gRPC: product list returned": {
+                            "name": "gRPC: product list returned",
+                            "path": "::gRPC - single products::gRPC: product list returned",
+                            "id": "9c18756c6af77ad1419f169ca8b4a78d",
+                            "passes": 51908,
+                            "fails": 0
+                        },
+                        "gRPC: requested product count returned": {
+                            "id": "7e9ed97c1a2f7c6c184d67a62c955fba",
+                            "passes": 51908,
+                            "fails": 0,
+                            "name": "gRPC: requested product count returned",
+                            "path": "::gRPC - single products::gRPC: requested product count returned"
+                        },
+                        "gRPC: products sorted by ascending ID": {
+                            "fails": 0,
+                            "name": "gRPC: products sorted by ascending ID",
+                            "path": "::gRPC - single products::gRPC: products sorted by ascending ID",
+                            "id": "ee24dfe8f2e56a02522417bc1937745b",
+                            "passes": 51908
+                        }
+                    },
+                "name": "gRPC - single products"
+            }
+        },
+        "checks": {},
+        "name": "",
+        "path": ""
+    }
+}
